@@ -104,3 +104,19 @@
 	name = "\improper ROXLNYV - Ramscoop"
 	icon_state = "gantry_yacht_down"
 	area_flags = AREA_FLAG_RAD_SHIELDED
+
+
+/obj/structure/closet/hydroponics
+	name = "botanist's locker"
+	req_access = null
+	closet_appearance = /decl/closet_appearance/secure_closet/hydroponics
+
+/obj/structure/closet/hydroponics/WillContain()
+	return list(
+		new /datum/atom_creator/weighted(list(/obj/item/clothing/suit/apron, /obj/item/clothing/suit/apron/overalls)),
+		/obj/item/storage/plants,
+		/obj/item/clothing/head/bandana/green,
+		/obj/item/material/minihoe,
+		/obj/item/material/hatchet,
+		/obj/item/wirecutters/clippers,
+	)
