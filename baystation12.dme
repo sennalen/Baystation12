@@ -3183,6 +3183,7 @@
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_maps.dm"
+#include "maps\away\roxlnyv\roxlnyv_areas.dm"
 #include "maps\away\roxlnyv\template.dmm"
 #include "~code\global_init.dm"
 // END_INCLUDE
