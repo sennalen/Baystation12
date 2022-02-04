@@ -20,6 +20,7 @@
 	var/obj/effect/fusion_em_field/owned_field
 	var/field_strength = 1//0.01
 	var/initial_id_tag
+	var/can_harvest = TRUE
 
 /obj/machinery/power/fusion_core/mapped
 	anchored = TRUE
@@ -98,7 +99,7 @@
 		var/datum/extension/local_network_member/fusion = get_extension(src, /datum/extension/local_network_member)
 		fusion.get_new_tag(user)
 		return
-	
+
 	else if(isWrench(W))
 		anchored = !anchored
 		playsound(src.loc, 'sound/items/Ratchet.ogg', 75, 1)
@@ -128,3 +129,9 @@
 	if(idle_power_usage > avail())
 		return FALSE
 	. = TRUE
+
+
+/obj/machinery/power/fusion_core/russian
+	name = "\improper Pskov-7 Tokamak core"
+	desc = "An enormous solenoid for generating extremely high power electromagnetic fields. For the fatherland!"
+	can_harvest = FALSE

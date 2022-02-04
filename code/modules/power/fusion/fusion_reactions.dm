@@ -1,5 +1,8 @@
 var/list/fusion_reactions
 
+var/list/thermal_fusion_reactions
+
+
 /decl/fusion_reaction
 	var/p_react = "" // Primary reactant.
 	var/s_react = "" // Secondary reactant.
@@ -31,6 +34,8 @@ proc/get_fusion_reaction(var/p_react, var/s_react, var/m_energy)
 		var/list/secondary_reactions = fusion_reactions[p_react]
 		if(list_find(secondary_reactions, s_react))
 			return fusion_reactions[p_react][s_react]
+
+
 
 // Material fuels
 //  deuterium
@@ -165,3 +170,75 @@ proc/get_fusion_reaction(var/p_react, var/s_react, var/m_energy)
 	energy_production = 12
 	radiation = 3
 	instability = 2.5
+
+
+
+//tweaked reactions for the thermal reactor
+//not a subclass so the existing code doesn't iterate over these
+
+/decl/thermal_fusion_reaction
+	var/list/reagents = list()
+	var/list/products = list()
+	var/minimum_temperature = 0 //K
+	var/base_rate = 0.0 //if minimum temp is met, reaction rate is rate_base + (temp_coeff*T + temp_quad*T^2) * (density_coeff*D + density_quad*D^2)
+	var/temp_coeff = 0.0
+	var/temp_quad = 0.0
+	var/density_coeff = 0.0
+	var/density_quad = 0.0
+	var/energy_delta = 0 //MeV
+	var/release_always = FALSE //Always do this 100% when turning back into XGM gas
+
+proc/get_thermal_fusion_reaction()
+	if(!thermal_fusion_reactions)
+		thermal_fusion_reactions = list()
+		for(var/rtype in typesof(/decl/thermal_fusion_reaction)
+			LAZYADD(thermal_fusion_reactions, rtype)
+
+	return thermal_fusion_reactions
+
+/decl/thermal_fusion_reaction/free_neutron
+	reagents = list("neutron")
+	energy_delta = 14.1
+	products = list()
+	release_always = TRUE
+	base_rate = 0.999
+	density_quad = -0.001
+
+/decl/thermal_fusion_reaction/deuterium_xgm
+	reagents = list("deuterium")
+	energy_delta = 12e-6
+	products = list("GAS_HYDROGEN")
+	release_always = TRUE
+	release_only = TRUE
+
+/decl/thermal_fusion_reaction/tritium_xgm
+	reagents = list("tritium")
+	energy_delta = 12e-6
+	products = list("GAS_HYDROGEN")
+	release_always = TRUE
+	release_only = TRUE
+
+/decl/thermal_fusion_reaction/deuterium_deuterium
+	reagents = list("deuterium", "deuterium")
+	energy_delta = 3.27
+	products = list("helium3", "neutron")
+	minimum_temperature = 1e6
+	temperature_coeff = 1e-6
+	density_quad = 1e-6
+
+/decl/thermal_fusion_reaction/hydrogen_hydrogen
+	reagents = list("GAS_HYDROGEN", "GAS_HYDROGEN")
+	energy_delta =
+	products = list()
+	minimum_temperature = 10e6
+	temperature_coeff = 1.0 / 60e6
+	density_quad = 1e-6
+
+
+/decl/thermal_fusion_reaction/helium_helium
+	reagents = list("GAS_HELIUM", "GAS_HELIUM")
+	energy_delta =
+	products = list("GAS_OXYGEN")
+	minimum_temperature = 10e8
+	temperature_coeff = 1e-8
+	density_quad = 1e-6

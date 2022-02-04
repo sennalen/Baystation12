@@ -40,11 +40,13 @@
 	var/datum/extension/local_network_member/lanm = get_extension(src, /datum/extension/local_network_member)
 	var/datum/local_network/lan = lanm.get_local_network()
 
-	if(lan)	
+	if(lan)
 		var/list/fusion_cores = lan.get_devices(/obj/machinery/power/fusion_core)
-		if(fusion_cores && fusion_cores.len)
-			harvest_from = fusion_cores[1]
-	return harvest_from
+		for (var/fusion_core/core in cores)
+			if(core/can_harvest)
+				harvest_from = core
+				return harvest_from
+	return null
 
 /obj/machinery/kinetic_harvester/ui_interact(var/mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = 1)
 

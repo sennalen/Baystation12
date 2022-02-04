@@ -491,6 +491,133 @@
 	update_icon()
 	return 0
 
+
+/obj/effect/fusion_em_field/thermal //generates no power directly, releases heated gas
+	var/fuel_loss = 0
+
+/obj/effect/fusion_em_field/thermal/Process()
+	//make sure the field generator is still intact
+	if(QDELETED(owned_core))
+		qdel(src)
+		return
+
+	// Take some gas up from our environment.
+	var/added_particles = FALSE
+	var/datum/gas_mixture/uptake_gas = owned_core.loc.return_air()
+	if(uptake_gas)
+		uptake_gas = uptake_gas.remove_by_flag(XGM_GAS_FUSION_FUEL, rand(5,10) * size)
+	if(uptake_gas && uptake_gas.total_moles)
+		for(var/gasname in uptake_gas.gas)
+			if(uptake_gas.gas[gasname]*10 > reactants[gasname])
+				AddParticles(gasname, uptake_gas.gas[gasname]*10)
+				uptake_gas.adjust_gas(gasname, -(uptake_gas.gas[gasname]), update=FALSE)
+				added_particles = TRUE
+		if(added_particles)
+			uptake_gas.update_values()
+
+	//let the particles inside the field react
+	React()
+
+	for(var/reactant in reactants)
+		if(reactants[reactant] < 1)
+			reactants.Remove(reactant)
+
+
+	check_obstacles()
+	check_instability()
+
+	Thermalize(fuel_loss)
+	SSradiation.radiate(src, round(radiation*0.001))
+
+	fuel_loss = 0
+	radiation = 0
+
+	return 1
+
+
+/obj/effect/fusion_em_field/thermal/AddParticles(var/name, var/quantity = 1)
+	if(name in reactants)
+		reactants[name] += quantity
+	else
+		reactants.Add(name)
+		reactants[name] = quantity
+
+
+/obj/effect/fusion_em_field/thermal/Radiate()
+	check_obstacles()
+
+/obj/effect/fusion_em_field/thermal/proc/check_obstacles()
+	var/hit = 0
+
+	if(istype(loc, /turf))
+
+		for(var/atom/movable/AM in range(max(1,Floor(size/2)), loc))
+
+			if(AM == src || AM == owned_core || !AM.simulated)
+				continue
+
+			var/skip_obstacle
+			for(var/ignore_path in ignore_types)
+				if(istype(AM, ignore_path))
+					skip_obstacle = TRUE
+					break
+			if(skip_obstacle)
+				continue
+
+			AM.visible_message("<span class='danger'>The field buckles visibly around \the [AM]!</span>")
+			tick_instability += rand(30,50)
+			hit += 1
+
+	if(hit > 0)
+		var/empsev = max(1, min(3, Ceil(size/2)))
+		AM.emp_act(empsev)
+
+		if(owned_core && owned_core.loc)
+			Thermalize(1.0 * hit / size / size)
+
+
+/obj/effect/fusion_em_field/thermal/check_instability()
+	if(tick_instability > 0)
+		percent_unstable += (tick_instability*size)/FUSION_INSTABILITY_DIVISOR
+		tick_instability = 0
+
+	if(percent_unstable >= 1)
+		percent_unstable = 1
+		owned_core.Shutdown(force_rupture=1)
+		return 0
+	else
+		percent_unstable = max(0, percent_unstable-rand(0.01,0.03))
+
+		if(percent_unstable > 0.5 && prob(percent_unstable*100))
+			if(plasma_temperature < RuptureThreshold())
+				visible_message("<span class='danger'>\The [src] ripples uneasily, like a disturbed pond.</span>")
+			else
+				var/fuel_loss
+				if(percent_unstable < 0.7)
+					visible_message("<span class='danger'>\The [src] ripples uneasily, like a disturbed pond.</span>")
+					fuel_loss = rand(1,5)
+				else if(percent_unstable < 0.9)
+					visible_message("<span class='danger'>\The [src] undulates violently, shedding plumes of plasma!</span>")
+					fuel_loss = rand(1,20)
+					rupture = prob(5)
+				else
+					visible_message("<span class='danger'>\The [src] is wracked by a series of horrendous distortions, buckling and twisting like a living thing!</span>")
+					fuel_loss = rand(1,50)
+					rupture = prob(25)
+
+				if(rupture)
+					owned_core.Shutdown(force_rupture=1)
+					return 0
+
+		return fuel_loss / 100.0
+
+/obj/effect/fusion_em_field/thermal/React()
+
+/obj/effect/fusion_em_field/thermal/proc/RuptureThreshold()
+	return 20000
+
+/obj/effect/fusion_em_field/thermal/proc/Thermalize(/var/rate)
+
 #undef FUSION_INSTABILITY_DIVISOR
 #undef FUSION_RUPTURE_THRESHOLD
 #undef FUSION_REACTANT_CAP
