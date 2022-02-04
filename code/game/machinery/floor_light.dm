@@ -21,6 +21,16 @@ var/list/floor_light_cache = list()
 
 /obj/machinery/floor_light/prebuilt
 	anchored = TRUE
+	/var/started = FALSE
+
+/obj/machinery/floor_light/prebuilt/Process()
+	if (!started)
+		update_use_power(POWER_USE_ACTIVE)
+		if(!(stat & NOPOWER))
+			queue_icon_update()
+			update_brightness()
+			started = TRUE
+	. = ..()
 
 /obj/machinery/floor_light/attackby(var/obj/item/W, var/mob/user)
 	if(isScrewdriver(W))

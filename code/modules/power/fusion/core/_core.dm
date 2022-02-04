@@ -19,7 +19,7 @@
 
 	var/obj/effect/fusion_em_field/owned_field
 	var/field_strength = 1//0.01
-	var/initial_id_tag
+	var/initial_id_tag = null
 	var/can_harvest = TRUE
 
 /obj/machinery/power/fusion_core/mapped
@@ -135,3 +135,21 @@
 	name = "\improper Pskov-7 Tokamak core"
 	desc = "An enormous solenoid for generating extremely high power electromagnetic fields. For the fatherland!"
 	can_harvest = FALSE
+
+
+/obj/machinery/power/fusion_core/thermal/Startup()
+	if(owned_field)
+		return
+	owned_field = new /obj/effect/fusion_em_field/thermal(loc, src)
+	owned_field.ChangeFieldStrength(field_strength)
+	icon_state = "core1"
+	update_use_power(POWER_USE_ACTIVE)
+	. = 1
+
+/obj/machinery/power/fusion_core/thermal/jumpstart(var/field_temperature)
+	field_strength = 60
+	Startup()
+	if(!owned_field)
+		return FALSE
+	owned_field.plasma_temperature = field_temperature
+	return TRUE

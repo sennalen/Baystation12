@@ -494,6 +494,8 @@
 
 /obj/effect/fusion_em_field/thermal //generates no power directly, releases heated gas
 	var/fuel_loss = 0
+	var/reactions = null
+
 
 /obj/effect/fusion_em_field/thermal/Process()
 	//make sure the field generator is still intact
@@ -515,16 +517,14 @@
 		if(added_particles)
 			uptake_gas.update_values()
 
-	//let the particles inside the field react
+
+	var/kB = 1.380649e-23
+	plasma_temperature = energy * 2.0 / 3.0 / kB
 	React()
-
-	for(var/reactant in reactants)
-		if(reactants[reactant] < 1)
-			reactants.Remove(reactant)
-
+	plasma_temperature = energy * 2.0 / 3.0 / kB
 
 	check_obstacles()
-	check_instability()
+	var/fuel_loss = check_instability()
 
 	Thermalize(fuel_loss)
 	SSradiation.radiate(src, round(radiation*0.001))
@@ -538,7 +538,7 @@
 /obj/effect/fusion_em_field/thermal/AddParticles(var/name, var/quantity = 1)
 	if(name in reactants)
 		reactants[name] += quantity
-	else
+	if(name != "electron")
 		reactants.Add(name)
 		reactants[name] = quantity
 
@@ -569,9 +569,6 @@
 			hit += 1
 
 	if(hit > 0)
-		var/empsev = max(1, min(3, Ceil(size/2)))
-		AM.emp_act(empsev)
-
 		if(owned_core && owned_core.loc)
 			Thermalize(1.0 * hit / size / size)
 
@@ -587,12 +584,13 @@
 		return 0
 	else
 		percent_unstable = max(0, percent_unstable-rand(0.01,0.03))
+		var/fuel_loss = 0.0
+		var/rupture = FALSE
 
 		if(percent_unstable > 0.5 && prob(percent_unstable*100))
 			if(plasma_temperature < RuptureThreshold())
 				visible_message("<span class='danger'>\The [src] ripples uneasily, like a disturbed pond.</span>")
 			else
-				var/fuel_loss
 				if(percent_unstable < 0.7)
 					visible_message("<span class='danger'>\The [src] ripples uneasily, like a disturbed pond.</span>")
 					fuel_loss = rand(1,5)
@@ -611,12 +609,63 @@
 
 		return fuel_loss / 100.0
 
+
+/proc/cmp_thermal_fusion_des(var/decl/thermal_fusion_reaction/A, var/decl/thermal_fusion_reaction/B)
+	return B.energy_delta - A.energy_delta
+
+
 /obj/effect/fusion_em_field/thermal/React()
+	if (!reactions)
+		reactions = get_thermal_fusion_reactions()
+
+	var/total_moles = 0
+	for(var/r in reactants)
+		total_moles += reactants[r]
+
+	var/square_size = size*size
+
+	var/rates = list()
+
+	for (var/decl/thermal_fusion_reaction/reaction in reactions)
+		if(reaction.release_only)
+			continue
+
+		if((plasma_temperature < reaction.minimum_temperature))
+			continue
+
+		var/density_rate = 1.0
+		for(var/reagent in reaction/reagents)
+			if(!(reagent in reactants))
+				density_rate = 0
+				break
+			density_rate *= reactants[reagent] / square_size
+		if(density_rate <= 0)
+			continue
+
+		var/temp_rate = reaction.base_rate + reaction.temperature_coeff*plasma_temperature + reaction.temperature_quad*plasma_temperature*plasma_temperature
+
+		var/rate = temp_rate * density_rate * square_size
+
+		if(rate > 0)
+			rates[reaction] = rate
+
+	var/plan = sortTim(rates, /proc/cmp_thermal_fusion_des)
+
+	for(var/reaction in plan)
+		var/a = 1
+
+	for(var/reactant in reactants)
+		if(reactants[reactant] < 1)
+			reactants.Remove(reactant)
+
+
 
 /obj/effect/fusion_em_field/thermal/proc/RuptureThreshold()
 	return 20000
 
 /obj/effect/fusion_em_field/thermal/proc/Thermalize(/var/rate)
+	SSradiation.radiate(src, round(radiation*0.001))
+
 
 #undef FUSION_INSTABILITY_DIVISOR
 #undef FUSION_RUPTURE_THRESHOLD

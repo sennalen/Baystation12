@@ -93,7 +93,6 @@
 /area/roxlnyv/cargo_bay
 	name = "\improper ROXLNYV - Cargo Bay"
 	icon_state = "gantry_lifepod"
-	area_flags = AREA_FLAG_RAD_SHIELDED
 
 /area/roxlnyv/shuttle
 	name = "\improper ROXLNYV - GARRY"
@@ -105,6 +104,14 @@
 	icon_state = "gantry_yacht_down"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/roxlnyv/radiator
+	name = "\improper ROXLNYV - Radiator"
+	icon_state = "gantry_yacht_down"
+
+/area/roxlnyv/solar
+	name = "\improper ROXLNYV - Solar Array"
+	icon_state = "gantry_yacht_down"
+
 
 /obj/structure/closet/hydroponics
 	name = "botanist's locker"
@@ -113,7 +120,6 @@
 
 /obj/structure/closet/hydroponics/WillContain()
 	return list(
-		new /datum/atom_creator/weighted(list(/obj/item/clothing/suit/apron, /obj/item/clothing/suit/apron/overalls)),
 		/obj/item/storage/plants,
 		/obj/item/clothing/head/bandana/green,
 		/obj/item/material/minihoe,

@@ -153,3 +153,23 @@
 			/obj/item/reagent_containers/chem_disp_cartridge/syrup_vanilla,
 			/obj/item/reagent_containers/chem_disp_cartridge/syrup_pumpkin
 		)
+
+
+/obj/machinery/chemical_dispenser/bar_roxlnyv
+	name = "flavor dispenser"
+	desc = "For enhancing potatoes and potato-based beverages."
+	icon_state = "coffee_dispenser"
+	ui_title = "Flavor Dispenser"
+	accept_drinking = 1
+	core_skill = SKILL_COOKING
+	can_contaminate = TRUE //hasn't been maintained since before the war
+
+/obj/machinery/chemical_dispenser/bar_roxlnyv
+	spawn_cartridges = list(
+			/obj/item/reagent_containers/chem_disp_cartridge/coffee,
+			/obj/item/reagent_containers/chem_disp_cartridge/syrup_chocolate,
+			/obj/item/reagent_containers/chem_disp_cartridge/sugar,
+			/obj/item/reagent_containers/chem_disp_cartridge/orange,
+			/obj/item/reagent_containers/chem_disp_cartridge/lemon_lime,
+			/obj/item/reagent_containers/chem_disp_cartridge/sodawater,
+		)

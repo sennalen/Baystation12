@@ -42,8 +42,8 @@
 
 	if(lan)
 		var/list/fusion_cores = lan.get_devices(/obj/machinery/power/fusion_core)
-		for (var/fusion_core/core in cores)
-			if(core/can_harvest)
+		for (var/obj/machinery/power/fusion_core/core in fusion_cores)
+			if(core.can_harvest)
 				harvest_from = core
 				return harvest_from
 	return null
