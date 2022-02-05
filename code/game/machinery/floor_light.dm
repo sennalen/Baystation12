@@ -19,28 +19,16 @@ var/list/floor_light_cache = list()
 	var/default_light_outer_range = 3
 	var/default_light_colour = "#ffffff"
 
+
 /obj/machinery/floor_light/prebuilt
 	anchored = TRUE
-	/var/start_delay = 0
-
-
-/obj/machinery/floor_light/prebuilt/Initialize()
-	. = ..()
-	start_delay = rand(5,50)
-
 
 /obj/machinery/floor_light/prebuilt/Process()
-	. = ..()
-	log_world("floor light delay [start_delay]")
-	start_delay -= 1
-	if(start_delay == 2)
-		update_use_power(POWER_USE_ACTIVE)
-	if(start_delay == 1)
-		queue_icon_update()
-	if(start_delay == 0)
-		update_brightness()
-	if(start_delay < -10)
-		return PROCESS_KILL
+	log_world("floor light [src.x],[src.y]")
+	update_use_power(POWER_USE_ACTIVE)
+	queue_icon_update()
+	update_brightness()
+	return PROCESS_KILL
 
 
 /obj/machinery/floor_light/attackby(var/obj/item/W, var/mob/user)

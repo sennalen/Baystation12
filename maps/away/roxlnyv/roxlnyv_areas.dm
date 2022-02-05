@@ -5,14 +5,13 @@
 	id = "awaysite_roxlnyv_test"
 	description = "Independent ice miner."
 	suffixes = list("roxlnyv_default.dmm")
-	spawn_cost = 0
+	spawn_cost = 190
 	player_cost = 0
 	accessibility_weight = 10
 	shuttles_to_initialise = list(
 	)
 	area_usage_test_exempted_root_areas = list(/area/roxlnyv)
-	apc_test_exempt_areas = list(
-	)
+	apc_test_exempt_areas = list(/area/roxlnyv)
 	spawn_weight = 1
 
 /obj/effect/submap_landmark/joinable_submap/roxlnyv
@@ -30,7 +29,7 @@
 
 /obj/effect/overmap/visitable/ship/roxlnyv/test
 	name = "Unknown Vessel"
-	desc = "Sensor array detects a medium-sized vessel of irregular shape. Transponder tags are Terran-origin civilian."
+	desc = "Sensor array detects a medium-sized vessel of irregular shape. It is transmitting Terran-origin civilian transponder codes."
 	vessel_mass = 6000
 	fore_dir = NORTH
 	burn_delay = 2 SECONDS
@@ -102,16 +101,19 @@
 /area/roxlnyv/scoop
 	name = "\improper ROXLNYV - Ramscoop"
 	icon_state = "gantry_yacht_down"
-	area_flags = AREA_FLAG_RAD_SHIELDED
+	area_flags = AREA_FLAG_EXTERNAL
 
 /area/roxlnyv/radiator
 	name = "\improper ROXLNYV - Radiator"
 	icon_state = "gantry_yacht_down"
+	area_flags = AREA_FLAG_EXTERNAL
+	has_gravity = 0
 
 /area/roxlnyv/solar
 	name = "\improper ROXLNYV - Solar Array"
 	icon_state = "gantry_yacht_down"
-
+	area_flags = AREA_FLAG_EXTERNAL
+	has_gravity = 0
 
 /obj/structure/closet/hydroponics
 	name = "botanist's locker"

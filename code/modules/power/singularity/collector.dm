@@ -19,7 +19,7 @@ var/global/list/rad_collectors = list()
 	var/last_power_new = 0
 	var/active = 0
 	var/locked = 0
-	var/drainratio = 1
+	var/drainratio = 0.01
 
 	var/last_rads
 	var/max_rads = 250 // rad collector will reach max power output at this value, and break at twice this value
@@ -27,6 +27,8 @@ var/global/list/rad_collectors = list()
 	var/pulse_coeff = 20
 	var/end_time = 0
 	var/alert_delay = 10 SECONDS
+
+	var/decl/xgm_gas/gas_product = null
 
 /obj/machinery/power/rad_collector/New()
 	..()
@@ -39,35 +41,52 @@ var/global/list/rad_collectors = list()
 /obj/machinery/power/rad_collector/Process()
 	if((stat & BROKEN) || melted)
 		return
+
 	var/turf/T = get_turf(src)
-	if(T)
-		var/datum/gas_mixture/our_turfs_air = T.return_air()
-		if(our_turfs_air.temperature > max_safe_temp)
-			health -= ((our_turfs_air.temperature - max_safe_temp) / 10)
-			if(health <= 0)
-				collector_break()
+	if(!T)
+		return
+
+	var/datum/gas_mixture/our_turfs_air = T.return_air()
+	if(our_turfs_air.temperature > max_safe_temp)
+		health -= ((our_turfs_air.temperature - max_safe_temp) / 10)
+		if(health <= 0)
+			collector_break()
+			return
 
 	//so that we don't zero out the meter if the SM is processed first.
 	last_power = last_power_new
 	last_power_new = 0
 	last_rads = SSradiation.get_rads_at_turf(get_turf(src))
-	if(P && active)
+
+	if(!gas_product)
+		gas_product = new /decl/xgm_gas/alium()
+		gas_product.molar_mass = 0.4 //slightly less than phoron
+		gas_product.flags = XGM_GAS_CONTAMINANT
+
+	if(active)
 		if(last_rads > max_rads*2)
 			collector_break()
+			return
+
 		if(last_rads)
 			if(last_rads > max_rads)
 				if(world.time > end_time)
 					end_time = world.time + alert_delay
 					visible_message("[icon2html(src, viewers(get_turf(src)))] \the [src] beeps loudly as the radiation reaches dangerous levels, indicating imminent damage.")
 					playsound(src, 'sound/effects/screech.ogg', 100, 1, 1)
-			receive_pulse(12.5*(last_rads/max_rads)/(0.3+(last_rads/max_rads)))
 
-	if(P)
-		if(P.air_contents.gas[GAS_PHORON] == 0)
-			investigate_log("<font color='red'>out of fuel</font>.","singulo")
-			eject()
-		else
-			P.air_adjust_gas(GAS_PHORON, -0.01*drainratio*min(last_rads,max_rads)/max_rads) //fuel cost increases linearly with incoming radiation
+			var/drain_amount = drainratio*min(last_rads,max_rads)/max_rads //fuel cost increases linearly with incoming radiation
+
+			var/datum/gas_mixture/source = our_turfs_air
+			if(P)
+				source = P.air_contents
+			drain_amount = drain_amount * source.get_gas(GAS_PHORON) / source.total_moles  //radiation absorbed by other gas contents
+			drain_amount = min(drain_amount, source.get_gas(GAS_PHORON))
+			source.adjust_multi(list(GAS_PHORON, -drain_amount, gas_product, drain_amount)) //conservation of mass
+			var/effective_rads = drain_amount / drainratio
+
+			receive_pulse(12.5*(effective_rads)/(0.3+(effective_rads)), source)
+
 
 /obj/machinery/power/rad_collector/CanUseTopic(mob/user)
 	if(!anchored)
@@ -182,14 +201,13 @@ var/global/list/rad_collectors = list()
 	else
 		update_icon()
 
-/obj/machinery/power/rad_collector/proc/receive_pulse(var/pulse_strength)
-	if(P && active)
-		var/power_produced = 0
-		power_produced = min(100*P.air_contents.gas[GAS_PHORON]*pulse_strength*pulse_coeff,max_power)
-		add_avail(power_produced)
-		last_power_new = power_produced
-		return
+/obj/machinery/power/rad_collector/proc/receive_pulse(pulse_strength)
+	var/power_produced = 0
+	power_produced = min(pulse_strength*pulse_coeff, max_power)
+	add_avail(power_produced)
+	last_power_new = power_produced
 	return
+
 
 
 /obj/machinery/power/rad_collector/on_update_icon()
@@ -221,3 +239,4 @@ var/global/list/rad_collectors = list()
 	else
 		flick("ca_deactive", src)
 	update_icon()
+
