@@ -3184,6 +3184,7 @@
 #include "interface\skin.dmf"
 #include "maps\_maps.dm"
 #include "maps\away\needlenose\needlenose_areas.dm"
+#include "maps\away\needlenose\needlenose_default.dmm"
 #include "maps\away\roxlnyv\roxlnyv_areas.dm"
 #include "maps\away\roxlnyv\roxlnyv_default.dmm"
 #include "~code\global_init.dm"
