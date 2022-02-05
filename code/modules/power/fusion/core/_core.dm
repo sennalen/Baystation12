@@ -144,7 +144,7 @@
 	owned_field.ChangeFieldStrength(field_strength)
 	icon_state = "core1"
 	update_use_power(POWER_USE_ACTIVE)
-	. = 1
+	return 1
 
 /obj/machinery/power/fusion_core/thermal/jumpstart(var/field_temperature)
 	field_strength = 60

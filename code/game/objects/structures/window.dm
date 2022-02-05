@@ -663,6 +663,12 @@
 	name = "frosted window"
 	color = GLASS_COLOR_FROSTED
 
+/obj/structure/window/reinforced/tinted/frosted/Initialize()
+	. = ..()
+	set_opacity(TRUE)
+	name = "frosted window"
+	color = GLASS_COLOR_FROSTED
+
 /obj/structure/window/shuttle
 	name = "shuttle window"
 	desc = "It looks rather strong. Might take a few good hits to shatter it."
