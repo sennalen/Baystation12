@@ -82,7 +82,7 @@ var/global/list/rad_collectors = list()
 				source = P.air_contents
 			var/mixture_penalty = source.get_gas(GAS_PHORON) / source.total_moles  //radiation absorbed by other gas contents
 			if(!P)
-				mixture_penalty = mixture_penality*mixture_penalty //give a tank some advantage over ambient air
+				mixture_penalty = mixture_penalty*mixture_penalty //give a tank some advantage over ambient air
 			drain_amount = drain_amount * mixture_penalty
 			drain_amount = min(drain_amount, source.get_gas(GAS_PHORON))
 			source.adjust_multi(list(GAS_PHORON, -drain_amount, gas_product, drain_amount)) //conservation of mass
