@@ -9,7 +9,7 @@ var/global/list/rad_collectors = list()
 	anchored = FALSE
 	density = TRUE
 	req_access = list(access_engine_equip)
-	var/obj/item/tank/phoron/P = null
+	var/obj/item/tank/P = null
 
 	var/health = 100
 	var/max_safe_temp = 1000 + T0C
@@ -80,7 +80,10 @@ var/global/list/rad_collectors = list()
 			var/datum/gas_mixture/source = our_turfs_air
 			if(P)
 				source = P.air_contents
-			drain_amount = drain_amount * source.get_gas(GAS_PHORON) / source.total_moles  //radiation absorbed by other gas contents
+			var/mixture_penalty = source.get_gas(GAS_PHORON) / source.total_moles  //radiation absorbed by other gas contents
+			if(!P)
+				mixture_penalty = mixture_penality*mixture_penalty //give a tank some advantage over ambient air
+			drain_amount = drain_amount * mixture_penalty
 			drain_amount = min(drain_amount, source.get_gas(GAS_PHORON))
 			source.adjust_multi(list(GAS_PHORON, -drain_amount, gas_product, drain_amount)) //conservation of mass
 			var/effective_rads = drain_amount / drainratio
@@ -196,10 +199,7 @@ var/global/list/rad_collectors = list()
 	Z.dropInto(loc)
 	Z.reset_plane_and_layer()
 	src.P = null
-	if(active)
-		toggle_power()
-	else
-		update_icon()
+	update_icon()
 
 /obj/machinery/power/rad_collector/proc/receive_pulse(pulse_strength)
 	var/power_produced = 0
