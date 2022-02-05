@@ -4,7 +4,7 @@
 	name =  "\improper ROXLNYV-class"
 	id = "awaysite_roxlnyv_test"
 	description = "Independent ice miner."
-	suffixes = list("template.dmm")
+	suffixes = list("roxlnyv_default.dmm")
 	spawn_cost = 0
 	player_cost = 0
 	accessibility_weight = 10
