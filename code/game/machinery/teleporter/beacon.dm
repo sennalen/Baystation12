@@ -332,3 +332,7 @@ var/const/TELEBEACON_WIRE_SIGNALLER = 4
 			if (IsIndexCut(TELEBEACON_WIRE_POWER))
 				return
 			tele_beacon.set_power_cut(FALSE)
+
+
+/obj/machinery/tele_beacon/off
+	use_power = POWER_USE_OFF

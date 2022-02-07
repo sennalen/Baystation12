@@ -1,11 +1,10 @@
 
-
 /datum/map_template/ruin/away_site/roxlnyv/test_site
 	name =  "\improper ROXLNYV-class"
 	id = "awaysite_roxlnyv_test"
 	description = "Independent ice miner."
 	suffixes = list("roxlnyv_default.dmm")
-	spawn_cost = 190
+	spawn_cost = 0
 	player_cost = 0
 	accessibility_weight = 10
 	shuttles_to_initialise = list(
@@ -13,6 +12,7 @@
 	area_usage_test_exempted_root_areas = list(/area/roxlnyv)
 	apc_test_exempt_areas = list(/area/roxlnyv)
 	spawn_weight = 1
+	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
 
 /obj/effect/submap_landmark/joinable_submap/roxlnyv
 	name =  "ROXLNYV"

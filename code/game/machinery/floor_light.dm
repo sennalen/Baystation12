@@ -24,7 +24,6 @@ var/list/floor_light_cache = list()
 	anchored = TRUE
 
 /obj/machinery/floor_light/prebuilt/Process()
-	log_world("floor light [src.x],[src.y]")
 	update_use_power(POWER_USE_ACTIVE)
 	queue_icon_update()
 	update_brightness()

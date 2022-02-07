@@ -80,15 +80,16 @@ var/global/list/rad_collectors = list()
 			var/datum/gas_mixture/source = our_turfs_air
 			if(P)
 				source = P.air_contents
-			var/mixture_penalty = source.get_gas(GAS_PHORON) / source.total_moles  //radiation absorbed by other gas contents
-			if(!P)
-				mixture_penalty = mixture_penalty*mixture_penalty //give a tank some advantage over ambient air
+			var/mixture_penalty = 0.0
+			if(source.total_moles)
+				mixture_penalty = source.get_gas(GAS_PHORON) / source.total_moles  //radiation absorbed by other gas contents
 			drain_amount = drain_amount * mixture_penalty
 			drain_amount = min(drain_amount, source.get_gas(GAS_PHORON))
-			source.adjust_multi(list(GAS_PHORON, -drain_amount, gas_product, drain_amount)) //conservation of mass
+			if(drain_amount > 0.0)
+				source.adjust_multi(GAS_PHORON, -drain_amount, gas_product, drain_amount) //conservation of mass
 			var/effective_rads = drain_amount / drainratio
 
-			receive_pulse(12.5*(effective_rads)/(0.3+(effective_rads)), source)
+			receive_pulse(12.5*effective_rads/(0.3+effective_rads), source)
 
 
 /obj/machinery/power/rad_collector/CanUseTopic(mob/user)
