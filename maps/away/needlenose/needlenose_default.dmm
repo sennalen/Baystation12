@@ -107,7 +107,7 @@
 "cc" = (/turf/simulated/wall/titanium,/area/needlenose/holo2)
 "cd" = (/obj/machinery/atmospherics/unary/vent_pump{icon_state = "map_vent"; dir = 1},/obj/machinery/tele_beacon/off,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo2)
 "ce" = (/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo2)
-"cf" = (/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/obj/structure/cable/pink{icon_state = "0-1"; dir = 1},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/machinery/power/smes/buildable,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
+"cf" = (/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/obj/structure/cable/pink{icon_state = "0-1"; dir = 1},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/machinery/power/smes/buildable/preset/on_full,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "cg" = (/obj/structure/hygiene/toilet,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo1)
 "ch" = (/obj/structure/hygiene/sink{pixel_y = 26},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo1)
 "ci" = (/obj/structure/hygiene/drain,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo1)
@@ -120,7 +120,7 @@
 "cp" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 5; icon_state = "intact"},/turf/space,/area/needlenose/exterior)
 "cq" = (/obj/machinery/atmospherics/portables_connector{icon_state = "map_connector"; dir = 1},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo1)
 "cr" = (/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo1)
-"cs" = (/obj/structure/sign/warning/engineering_access,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/backstage)
+"cs" = (/obj/structure/sign/warning/engineering_access{pixel_y = 28},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/backstage)
 "ct" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_titanium,/area/needlenose/rads_port)
 "cu" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4; external_pressure_bound = 0; external_pressure_bound_default = 0; icon_state = "map_vent_in"; id_tag = "air_out"; internal_pressure_bound = 2000; internal_pressure_bound_default = 2000; pressure_checks = 2; pressure_checks_default = 2; pump_direction = 0; use_power = 1},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white/airless,/area/needlenose/rads_starboard)
 "cv" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/white/airless,/area/needlenose/rads_port)
@@ -142,15 +142,15 @@
 "cL" = (/obj/machinery/atmospherics/unary/vent_pump/engine{dir = 4; icon_state = "map_vent_in"; pressure_checks = 0; pump_direction = 0; use_power = 1},/turf/simulated/floor/reinforced/airless,/area/needlenose/rads_starboard)
 "cM" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/turf/simulated/wall/r_titanium,/area/needlenose/pipes)
 "cN" = (/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
-"cO" = (/obj/machinery/telecomms/allinone,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
+"cO" = (/obj/machinery/light{dir = 1},/obj/machinery/telecomms/allinone,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "cP" = (/obj/structure/backup_server,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "cQ" = (/obj/structure/sign/warning/secure_area{pixel_y = 26},/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "cR" = (/obj/structure/lattice,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/space,/area/needlenose/exterior)
 "cS" = (/obj/machinery/computer/drone_control,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
-"cT" = (/obj/machinery/computer/upload/ai,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
+"cT" = (/obj/machinery/light{dir = 1},/obj/machinery/r_n_d/server,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "cU" = (/obj/structure/displaycase,/obj/item/aiModule/reset,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
-"cV" = (/obj/machinery/atmospherics/binary/pump/high_power/on{dir = 1; target_pressure = 4000},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
-"cW" = (/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/machinery/power/smes/buildable/max_cap_in_out,/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
+"cV" = (/obj/machinery/atmospherics/binary/pump/high_power/on{dir = 1; target_pressure = 4000},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
+"cW" = (/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/machinery/power/smes/buildable/preset/on_full,/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
 "cX" = (/obj/machinery/atmospherics/unary/tank/oxygen,/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
 "cY" = (/obj/machinery/atmospherics/pipe/manifold/visible/red{dir = 8; icon_state = "map"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
 "cZ" = (/obj/machinery/atmospherics/unary/freezer{dir = 8; initialize_directions = 8; set_temperature = 500; use_power = 1},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
@@ -178,7 +178,7 @@
 "dv" = (/turf/space,/area/needlenose/mast)
 "dw" = (/turf/simulated/wall/r_titanium,/area/needlenose/airlock)
 "dx" = (/turf/simulated/floor/tiled/white,/area/needlenose/airlock)
-"dy" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 5},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
+"dy" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 5},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
 "dz" = (/obj/structure/lattice,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/space,/area/needlenose/exterior)
 "dA" = (/obj/machinery/atmospherics/omni/mixer{tag_east = 0; tag_east_con = 0; tag_north = 1; tag_north_con = 0.3; tag_south = 1; tag_south_con = 0.7; tag_west = 2; tag_west_con = 1},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
 "dB" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/visible{dir = 6; icon_state = "intact"},/turf/simulated/floor/tiled/white/airless,/area/needlenose/pipes)
@@ -209,7 +209,7 @@
 "ea" = (/obj/machinery/tele_pad,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "eb" = (/obj/machinery/drone_fabricator,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "ec" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
-"ed" = (/obj/machinery/atmospherics/unary/tank/nitrous_oxide,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
+"ed" = (/obj/machinery/atmospherics/unary/tank/nitrous_oxide{dir = 1},/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "ee" = (/obj/machinery/door/airlock/external/glass/bolted/cycling,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock)
 "ef" = (/obj/machinery/airlock_sensor,/turf/simulated/floor/tiled/white,/area/needlenose/airlock)
 "eg" = (/obj/structure/lattice,/obj/machinery/shipsensors,/turf/space,/area/needlenose/mast)
@@ -290,29 +290,26 @@
 "fD" = (/obj/machinery/door/airlock/multi_tile,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo3)
 "fE" = (/obj/machinery/door/airlock/multi_tile,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo2)
 "fF" = (/obj/machinery/door/airlock/multi_tile,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo1)
-"fG" = (/obj/structure/transit_tube,/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"fG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "fH" = (/obj/machinery/computer/teleporter{dir = 2},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "fI" = (/obj/machinery/tele_projector{dir = 4},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "fJ" = (/obj/machinery/tele_pad,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
-"fK" = (/obj/machinery/computer/teleporter{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"fL" = (/obj/machinery/tele_projector{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"fM" = (/obj/machinery/tele_pad,/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"fK" = (/obj/structure/table/glass/pglass,/obj/machinery/cooker/candy,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "fN" = (/obj/machinery/atmospherics/unary/tank/air,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "fO" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "fP" = (/obj/machinery/atmospherics/binary/oxyregenerator{dir = 2; power_setting = 3; use_power = 1},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "fQ" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "fR" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1; icon_state = "map-scrubbers"},/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/pink{icon_state = "2-4"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/white,/area/needlenose/backstage)
-"fS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"fT" = (/obj/structure/transit_tube{icon_state = "S-NE"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"fU" = (/obj/structure/transit_tube{icon_state = "S-NW"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"fV" = (/obj/structure/transit_tube{icon_state = "N-SE"},/turf/simulated/wall/r_titanium,/area/needlenose/public)
-"fW" = (/obj/effect/wallframe_spawn,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/public)
-"fX" = (/obj/structure/transit_tube{icon_state = "N-SW"},/turf/simulated/wall/r_titanium,/area/needlenose/public)
-"fY" = (/obj/structure/transit_tube{icon_state = "E-NW"},/turf/space,/area/space)
-"fZ" = (/obj/structure/transit_tube,/turf/space,/area/space)
-"ga" = (/obj/structure/transit_tube,/turf/simulated/wall/r_titanium,/area/needlenose/docking)
-"gb" = (/obj/structure/transit_tube,/turf/simulated/floor/tiled/white,/area/needlenose/docking)
-"gc" = (/obj/structure/transit_tube{icon_state = "W-NE"},/turf/space,/area/space)
+"fS" = (/obj/structure/sign/warning/science{pixel_y = 26},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"fU" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/pink{icon_state = "1-4"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"fV" = (/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/pink{icon_state = "2-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"fW" = (/obj/machinery/door/airlock/multi_tile,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/public)
+"fX" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"fY" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"fZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"ga" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"gb" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
+"gc" = (/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "gd" = (/obj/machinery/light,/obj/structure/cable/pink{icon_state = "1-4"; dir = 4},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/needlenose/backstage)
 "ge" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/backstage)
 "gf" = (/obj/effect/overmap/visitable/ship/needlenose/test,/turf/space,/area/space)
@@ -372,22 +369,22 @@
 "hh" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/wall/titanium,/area/needlenose/public)
 "hi" = (/obj/structure/cable/pink{icon_state = "0-1"; dir = 4},/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/obj/machinery/alarm{alarm_id = "xenobio1_alarm"; dir = 2; icon_state = "alarm0"; pixel_x = 0; pixel_y = 24},/obj/machinery/disposal,/obj/structure/cable/cyan{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo2)
 "hj" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hk" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"hk" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/closet/l3closet/general/multi,/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hl" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 4; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/turf/simulated/floor/tiled/white,/area/needlenose/airlock)
 "hm" = (/obj/machinery/door/airlock/external/glass/bolted/cycling,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock)
 "hn" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "ho" = (/obj/machinery/tele_beacon/off,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/needlenose/backstage)
 "hp" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/wall/titanium,/area/needlenose/public)
 "hq" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hr" = (/obj/structure/transit_tube,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hs" = (/obj/structure/transit_tube{icon_state = "W-SE"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"hr" = (/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/public)
+"hs" = (/obj/machinery/computer/teleporter{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "ht" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hu" = (/obj/machinery/atmospherics/unary/vent_pump{icon_state = "map_vent"; dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hv" = (/obj/machinery/disposal,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hw" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))},/obj/structure/cable/pink{icon_state = "0-1"; dir = 1},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hx" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hy" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/wall/r_titanium,/area/needlenose/public)
-"hz" = (/obj/structure/transit_tube,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white,/area/needlenose/docking)
+"hz" = (/obj/machinery/tele_projector{dir = 2},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "hA" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "hB" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/wall/r_titanium,/area/needlenose/airlock_pod)
 "hC" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1; icon_state = "map-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))},/obj/structure/cable/pink{icon_state = "0-1"; dir = 1},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
@@ -401,7 +398,7 @@
 "hK" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/wall/r_titanium,/area/needlenose/airlock_visitor)
 "hL" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hM" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/obj/machinery/light,/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hN" = (/obj/machinery/tele_beacon,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
+"hN" = (/obj/machinery/tele_beacon,/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "hO" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "hP" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
@@ -409,20 +406,9 @@
 "hS" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock_pod)
 "hT" = (/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/pink{icon_state = "1-4"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "hU" = (/obj/machinery/power/apc{dir = 2; name = "south bump"; pixel_y = -24},/turf/simulated/floor/tiled/white,/area/needlenose/airlock)
-"hV" = (/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/transit_tube{icon_state = "D-SE"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hW" = (/obj/structure/transit_tube{icon_state = "E-SW"},/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hX" = (/obj/structure/transit_tube/station{dir = 1},/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hY" = (/obj/structure/transit_tube,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"hZ" = (/obj/structure/transit_tube,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"ia" = (/obj/effect/wallframe_spawn,/obj/structure/transit_tube,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"ib" = (/obj/structure/transit_tube,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/pink{icon_state = "1-4"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"ic" = (/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/transit_tube/station{dir = 1},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"id" = (/obj/structure/transit_tube,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/pink{icon_state = "2-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"ie" = (/obj/structure/transit_tube,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/pink{icon_state = "4-8"},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"if" = (/obj/structure/transit_tube,/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"hV" = (/obj/machinery/tele_pad,/turf/simulated/floor/tiled/white,/area/needlenose/docking)
+"hW" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "ig" = (/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"ih" = (/obj/effect/wallframe_spawn,/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/public)
-"ii" = (/obj/structure/transit_tube,/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "ij" = (/obj/structure/cable/pink{icon_state = "1-4"},/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "ik" = (/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/obj/structure/cable/pink{icon_state = "0-1"; dir = 4},/obj/structure/cable/cyan{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "il" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 2; icon_state = "map_vent"},/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
@@ -436,33 +422,23 @@
 "it" = (/obj/machinery/door/airlock/external/glass/bolted/cycling,/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock_visitor)
 "iu" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 8; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/obj/machinery/power/apc{dir = 2; name = "south bump"; pixel_y = -24},/obj/structure/cable/pink,/obj/structure/cable/cyan,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock_pod)
 "iv" = (/obj/machinery/disposal,/obj/machinery/light,/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"iw" = (/obj/structure/transit_tube/station,/obj/structure/transit_tube_pod{icon_state = "pod"; dir = 8},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "ix" = (/obj/machinery/light,/turf/simulated/floor/tiled/white,/area/needlenose/docking)
 "iy" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/pink{icon_state = "1-2"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock_visitor)
 "iz" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/machinery/light,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock_pod)
 "iA" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/wall/r_titanium,/area/needlenose/airlock_pod)
 "iB" = (/obj/machinery/atmospherics/unary/vent_pump{icon_state = "map_vent"; dir = 1},/obj/machinery/light,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock_visitor)
 "iC" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1; icon_state = "map-scrubbers"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"iD" = (/obj/structure/sign/warning/science{pixel_y = 26},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/white,/area/needlenose/public)
+"iD" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "iE" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/public)
 "iF" = (/obj/machinery/power/terminal{dir = 1},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/light,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "iG" = (/obj/machinery/tele_projector{dir = 4},/obj/machinery/light,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "iH" = (/obj/machinery/light,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "iI" = (/obj/machinery/shieldgen{anchored = 1},/turf/simulated/floor/tiled/white,/area/needlenose/pod)
-"iJ" = (/obj/structure/table/glass/pglass,/obj/machinery/cooker/cereal,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "iK" = (/obj/machinery/gibber,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/backstage)
 "iL" = (/obj/structure/table/glass/pglass,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo3)
 "iM" = (/obj/structure/table/glass/pglass,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo2)
 "iN" = (/obj/structure/table/glass/pglass,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/holo1)
 "iO" = (/obj/machinery/power/apc{dir = 2; name = "south bump"; pixel_y = -24},/obj/structure/cable/pink,/obj/structure/cable/cyan,/turf/simulated/floor/tiled/steel_grid,/area/needlenose/airlock_visitor)
-"iP" = (/obj/structure/transit_tube{icon_state = "D-SW"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"iQ" = (/obj/structure/transit_tube{icon_state = "D-NW"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"iR" = (/obj/machinery/atmospherics/unary/vent_pump{icon_state = "map_vent"; dir = 1},/obj/structure/transit_tube{icon_state = "D-NE"},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"iS" = (/obj/structure/transit_tube{icon_state = "D-NE"},/turf/space,/area/space)
-"iT" = (/obj/structure/transit_tube{icon_state = "D-NW"},/turf/space,/area/space)
-"iU" = (/obj/structure/transit_tube/station{dir = 1},/turf/simulated/floor/tiled/white,/area/needlenose/public)
-"iV" = (/obj/structure/transit_tube{icon_state = "D-SW"},/turf/simulated/wall/r_titanium,/area/needlenose/public)
-"iW" = (/obj/structure/transit_tube{icon_state = "D-SE"},/turf/simulated/wall/r_titanium,/area/needlenose/public)
 "iX" = (/obj/machinery/power/apc{dir = 2; locked = 0; name = "south bump"; operating = 1; pixel_y = -28; req_access = list()},/obj/structure/cable/green,/turf/simulated/floor/tiled/white/airless,/area/needlenose/control)
 "iY" = (/obj/machinery/atmospherics/unary/vent_pump/engine{dir = 4; icon_state = "map_vent_in"; pressure_checks = 0; pump_direction = 0; use_power = 1},/turf/simulated/floor/reinforced/airless,/area/needlenose/rads_port)
 "iZ" = (/obj/effect/wallframe_spawn/reinforced_phoron/hull,/obj/machinery/atmospherics/pipe/simple/visible/universal{dir = 4},/turf/simulated/floor/reinforced/airless,/area/needlenose/rads_port)
@@ -528,7 +504,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahahafafafafafafafafafafafafafafafafafafafafafafafafahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagagaaaaaaahanaiakalaoaqaqasaraqaqaqararaqaqaqarasaqaqaqarcuatapauahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagfHfIfJfyavavavavavavaggJgGgKgFgFgFgLgEiJiKagavgigjgjgkgyjjgzaXawaxaCbYbYaVaZaBazaGaJaJaJaKaKaJaJaJaKaLaJaJaJaKaKaJaJaJaKaKafahaDahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagfHfIfJfyavavavavavavaggJgGgKgFgFgFgLgEfKiKagavgigjgjgkgyjjgzaXawaxaCbYbYaVaZaBazaGaJaJaJaKaKaJaJaJaKaLaJaJaJaKaKaJaJaJaKaKafahaDahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagavavavavavavavavavavaggFgFgHgFgIgFgHgEavavagglgmfegogpaMaNaObrbvaPaFaFaFaHaIabababacacacababacacacababacacacababacacacabababahaDahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagavavavavavavavavavfOaggLgGgFgFgMgFgFgEavfOagdFgnfifnfNfPfQgqgrcfagaaaaaaaRaTadaeaEaEayayayayayjaaybzayayayayaAaAayjaaybzcLadbbbcahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagagagagavavavavavavavavavavaggEgEgEgEgEgEgEgEavavagaUguaSguavguaQgOgtfragaaaaaaaRbdiZjbjdjkjijejejejejejejejejejijejcjcjejejejeiYiZbbbcahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -540,20 +516,20 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgR
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaamambLbMbMbMbMbObQbUbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbnbCaaaaaDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagamamaaaaaaaaaaaaaabVbWbWbWbWbWbWbWbWbWbWbWbWbWbWbWbXbYbZamamcaclcmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaaaaaaaaaaacHcIcHcHcHcHcHcHcHcHcHcHcHcHcHcHcHcHaacncJcKcJcJjfcJcMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaaaaaaaaaaacHcOeccPcHeccQehcHcScTeccNcNcNeccUcHaacncJcVcWcXcYcZdadbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaaaaaaaaaaacHcNcTcPcHcOcQehcHcScNeccNcNcNeccUcHaacncJcVcWcXcYcZdadbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaaaaaaaaaaacHggcNcNcHcNcNcNcHcNcNcNdcdddccNcNcHaacncJdedfdgdhdidadbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaaaaaaaaaaacHdjcNcNdkcNcNcNdkcNdldudqdsdtgYcNcHgfcncJdydAdBdCdDdadbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagaWhobacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaaaaaaaaaaacHghdEdUcHcNcNcNcHcNdHdIdKdLdKdMdNcHaacncJdOdPdQdRdSdadbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaggvgRbacDcDcDcDcDcDcDcDcDcDajcEcEcEcEcEcEcEcEcEcEajcFcFcFcFcFcFcFcFcFcFagaaaaaaaaaaaacHdTiXiFcHdYiGeacHebcNiHcNcNcNeYedcHaacpeiejekelemeneodbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadwdwdwdwdwepeqhpepbJbJbJbJbJbJbJfDbNbJeqccccccccccccccfEcecceqckckckckckckckfFcrckepaaaaaaaaaaaacHcHcHercHcHcHcHcHcHcHcHcHcHcHcHcHcHaacxcJescJetcJcJcJaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaYaYaYaYdrdwdGdJeuewfxhFhqhchdhwhchehLhchchfhchvhhhvhchChchLhehchfhchLhhiCiDhwhjhFfSfShkeviEepamamaaaaaaaaaaaaaacRbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYdmamdnamamamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaYdvdvdvdveedxdxhlhmhnhnhEhGhPhThGhGhVhWhXhYhZhZiahZhZibhZichZhZhYidhZiaiehZifhriUfGfGhsiPePepaaamamamaaaaaaaaamdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaYdvdvdvdvdwhUdxefdwexevevevhMfKfLfMfTiQevhuevineqevevhMevevevfthuigineqhxevinhteveveviRfUivepaaaaamamamcxcxdzbYdmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaegaYaYaYaYaYaYaYaYaYaYfzaYaYaYaYdwdwdwdwdwepepepepepepepepfViVepepepepepepepepepepepepfWihepephyepepepepepepiWfXepepaaaaaaahaneyeyezeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiSfYfZfZfZfZfZfZfZfZgagbiwgbgbiigbgahzgbgafZfZfZfZgciTaaaaaaaaaaahdWeAeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeAahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffhfhfhfhijikffhAfhffaaaaaaeReSeRaaaaaaaaaaahdWeAeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeAahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffhfAfhfhilfhffhBfcfcfgfgeReReTeUeRaaaaaaaaahdWeCeCeCeDeDeDeCeCeCeCeCeCeCeCeCeCeCeCeDeDeDeCeCeCahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffhhNhOhOimhQhRhShDfcfjeReReVeWeXfBeRaaaaaaahdXeEeFeGeHeGeIeGeFeGeFeGeJeKeLeLeMeLeMeLeLeLeLeMeDahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaYaYaYaYdrdwdGdJeuewfxhFhqhchdhwhchehLhchchfhchLhhhvhchChchLhehchfhchLhhiCfShwhjhFhkhkiDeviEepamamaaaaaaaaaaaaaacRbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYbYdmamdnamamamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaYdvdvdvdveedxdxhlhmhnhnhEhGhPhThGhGhGhGhGfGhGhGhGhGhGfUhGhGhGhGfGfVhGhGfXhGfYfZevevevgaevePepaaamamamaaaaaaaaamdoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaYdvdvdvdvdwhUdxefdwexevevevhMevevevevevevhuevineqevevhMevevevfthuigineqhxevinhtevevevhuevivepaaaaamamamcxcxdzbYdmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaegaYaYaYaYaYaYaYaYaYaYfzaYaYaYaYdwdwdwdwdwepepepepepepepepepepepepepepepepepepepepepepfWhrepephyepepepepepepepepepepaaaaaaahaneyeyezeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAeAahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffhgbfhfhgcfhffhAfhffaaaaaaaaaaaaaaaaaaaaaaahdWeAeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeAahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaffhsfhfhfhijikffhAfhffaaaaaaeReSeRaaaaaaaaaaahdWeAeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeAahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaffhzfAfhhNilfhffhBfcfcfgfgeReReTeUeRaaaaaaaaahdWeCeCeCeDeDeDeCeCeCeCeCeCeCeCeCeCeCeCeDeDeDeCeCeCahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaffhVhWhOhOimhQhRhShDfcfjeReReVeWeXfBeRaaaaaaahdXeEeFeGeHeGeIeGeFeGeFeGeJeKeLeLeMeLeMeLeLeLeLeMeDahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffhixfhfhioipiqirisfmfofpeReViIeXeReRaaaaaaaheQeEeFeGeNeGeOeFeGeFeGeGeJeKeLeMeLeMeLeLeLeLfCeMeDahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafkfkfkfkfuitfkfciziufcfjeReReReReReReRaaaaaaahaheCeCeCeDeDeDeCeCeCeCeCeCeCeCeCeCeCeCeDeDeDeCeCeCahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafkhHhIhIhIiyhJhKiAfcfcfgfgeReZeZeZeRaaaaaaaaahaheAeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeBeAahamahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

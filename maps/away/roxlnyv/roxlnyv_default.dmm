@@ -169,24 +169,24 @@
 "dm" = (/obj/machinery/vending/hydronutrients,/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
 "dn" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/corridor)
 "do" = (/obj/machinery/vending/hydroseeds/generic,/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
-"dp" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/airlock)
+"dp" = (/obj/structure/catwalk,/obj/machinery/light,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "dq" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/door/airlock/multi_tile,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "dr" = (/turf/simulated/floor/reinforced,/area/roxlnyv/radiator)
 "ds" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/solar{id = "rox_solar"},/turf/space,/area/roxlnyv/solar)
 "dt" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/radiator)
 "du" = (/obj/structure/catwalk,/turf/space,/area/roxlnyv/solar)
-"dv" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/space,/area/roxlnyv/solar)
+"dv" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/solar{id = "rox_solar"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "dw" = (/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/flora/pottedplant/large,/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
-"dx" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/random/maintenance,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"dx" = (/obj/machinery/power/port_gen/pacman/super{anchored = 1},/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "dy" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering_lockers)
 "dz" = (/obj/machinery/door/blast/shutters,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "dA" = (/obj/machinery/door/blast/shutters,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "dB" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering_lockers)
 "dC" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"dD" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/space,/area/roxlnyv/solar)
+"dD" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "dE" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "dF" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering_lockers)
-"dG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering_lockers)
+"dG" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{id_tag = "rox_dock_pump"},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/airlock)
 "dH" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "dI" = (/obj/structure/closet/radiation,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/engineering_lockers)
 "dJ" = (/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
@@ -194,7 +194,7 @@
 "dL" = (/obj/structure/closet/firecloset,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "dM" = (/obj/structure/closet/emcloset,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "dN" = (/obj/machinery/suit_storage_unit/retro,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
-"dO" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/space,/area/roxlnyv/solar)
+"dO" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "dP" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6; icon_state = "intact"},/obj/structure/catwalk,/turf/space,/area/roxlnyv/radiator)
 "dQ" = (/obj/machinery/suit_storage_unit/standard_unit,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "dR" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
@@ -207,13 +207,13 @@
 "dY" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "dZ" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "ea" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 10},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/radiator)
-"eb" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/power/solar{id = "rox_solar"},/turf/space,/area/roxlnyv/solar)
+"eb" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "ec" = (/obj/machinery/fusion_fuel_compressor,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "ed" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; level = 2},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "ee" = (/obj/machinery/alarm{dir = 4; pixel_x = -25; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "ef" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "eg" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
-"eh" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
+"eh" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "ei" = (/obj/structure/table/gamblingtable,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/common)
 "ej" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "ek" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering_lockers)
@@ -233,8 +233,8 @@
 "ey" = (/obj/machinery/atmospherics/binary/pump{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "ez" = (/obj/machinery/atmospherics/binary/pump{dir = 2},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "eA" = (/turf/simulated/floor/reinforced,/area/roxlnyv/bridge)
-"eB" = (/obj/machinery/power/smes/buildable/preset/on_full,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
-"eC" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"eB" = (/obj/machinery/power/smes/buildable/preset/on_full,/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"eC" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "eD" = (/obj/machinery/atmospherics/pipe/manifold/visible{dir = 8; icon_state = "map"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "eE" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "eF" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/binary/pump/on{target_pressure = 0.5},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
@@ -244,63 +244,63 @@
 "eJ" = (/obj/machinery/portable_atmospherics/hydroponics,/obj/item/seeds/potatoseed,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
 "eK" = (/obj/structure/closet/hydroponics,/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
 "eL" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"eM" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/meter,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"eN" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"eM" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 6; icon_state = "intact"},/obj/structure/catwalk,/obj/machinery/light{dir = 8},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"eN" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "eO" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 5; icon_state = "intact"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
-"eP" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/button/blast_door{id_tag = "rox_fusion_door"; name = "tokamak blast door-control"; pixel_x = 23; pixel_y = -23},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"eP" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/meter,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "eQ" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 1; icon_state = "map"},/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "eR" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/visible,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "eS" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
 "eT" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/manifold/hidden/cyan,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "eU" = (/obj/machinery/power/solar_control{dir = 8; id = "rox_solar"},/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "eV" = (/obj/machinery/atmospherics/binary/pump/on{dir = 8; target_pressure = 15000},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
-"eW" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 6},/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"eW" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "eX" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "eY" = (/obj/machinery/atmospherics/binary/passive_gate/on{dir = 8; regulate_mode = 0},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
-"eZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 10},/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"eZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/power/terminal{dir = 1; icon_state = "term"},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fa" = (/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "fb" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
-"fc" = (/turf/simulated/wall/ocp_wall,/area/roxlnyv/engineering)
+"fc" = (/obj/effect/paint/black,/turf/simulated/wall/ocp_wall,/area/roxlnyv/engineering)
 "fd" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/blast/regular/open{id_tag = "rox_fusion_door"},/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction,/obj/machinery/atmospherics/binary/passive_gate/on{dir = 2},/turf/simulated/floor/reinforced,/area/roxlnyv/engineering)
 "fe" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/atmospherics/pipe/simple/visible,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/blast/regular/open{id_tag = "rox_fusion_door"},/turf/simulated/floor/reinforced,/area/roxlnyv/engineering)
 "ff" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/blast/regular/open{id_tag = "rox_fusion_door"},/turf/simulated/floor/reinforced,/area/roxlnyv/engineering)
 "fg" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; id_tag = null},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
-"fh" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/obj/machinery/power/terminal{dir = 1; icon_state = "term"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"fi" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 5; icon_state = "intact"},/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"fh" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/button/blast_door{id_tag = "rox_fusion_door"; name = "tokamak blast door-control"; pixel_x = 23; pixel_y = -23},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"fi" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 6},/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fj" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/closet/crate/uranium,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "fk" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"fl" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 9},/obj/structure/catwalk,/obj/machinery/meter,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"fl" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 10},/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fm" = (/obj/machinery/pointdefense{initial_id_tag = "rox_pd"},/turf/simulated/floor/reinforced,/area/roxlnyv/sleeping)
 "fn" = (/obj/machinery/fusion_fuel_injector/mapped{dir = 4; initial_id_tag = "rox_fusion"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "fo" = (/obj/effect/wallframe_spawn/reinforced/titanium,/obj/machinery/door/blast/regular/open{dir = 4; id_tag = "rox_fusion_door"},/turf/simulated/floor/reinforced,/area/roxlnyv/engineering)
 "fp" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
-"fq" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6; icon_state = "intact"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/item/pipe/injector{dir = 1},/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
+"fq" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6; icon_state = "intact"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/unary/outlet_injector{dir = 1; frequency = 1441; icon_state = "map_injector"; id = "waste_in"; use_power = 1},/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
 "fr" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 10},/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
 "fs" = (/obj/machinery/atmospherics/unary/tank/hydrogen{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "ft" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/power/terminal{dir = 1; icon_state = "term"},/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"fu" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow,/obj/machinery/power/solar{id = "rox_solar"},/turf/space,/area/roxlnyv/solar)
+"fu" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/power/solar{id = "rox_solar"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "fv" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4; icon_state = "intact"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fw" = (/obj/structure/catwalk,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
-"fx" = (/obj/machinery/power/generator{anchored = 1},/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
-"fy" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"fx" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 5; icon_state = "intact"},/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"fy" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 9},/obj/structure/catwalk,/obj/machinery/meter,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fz" = (/obj/machinery/computer/fusion/fuel_control{dir = 8; icon_state = "computer"; initial_id_tag = "rox_fusion"; req_access = list("ACCESS_ENGINE_EQUIP")},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fA" = (/obj/machinery/computer/fusion/gyrotron{dir = 8; icon_state = "computer"; initial_id_tag = "rox_fusion"; req_access = list("ACCESS_ENGINE_EQUIP")},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fB" = (/obj/structure/closet/crate/radiation,/obj/item/fuel_assembly/deuterium,/obj/item/fuel_assembly/deuterium,/obj/item/fuel_assembly/tritium,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
-"fC" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 1},/obj/structure/cable/yellow,/obj/machinery/power/fusion_core/russian{initial_id_tag = "rox_fusion"},/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
+"fC" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 1},/obj/structure/cable/yellow,/obj/machinery/power/fusion_core/thermal{initial_id_tag = "rox_fusion"},/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
 "fD" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 5},/obj/structure/catwalk,/turf/space,/area/roxlnyv/radiator)
 "fE" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 1},/obj/structure/catwalk,/turf/space,/area/roxlnyv/radiator)
 "fF" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4; icon_state = "intact"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fG" = (/obj/structure/catwalk,/obj/machinery/meter,/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 1; icon_state = "map"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fH" = (/obj/machinery/power/emitter/gyrotron/anchored{dir = 4; initial_id_tag = "rox_fusion"},/obj/structure/cable/yellow,/obj/structure/cable/yellow,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "fI" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 1},/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
-"fJ" = (/obj/machinery/atmospherics/valve{dir = 8; icon_state = "map_valve0"; name = "doom valve"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
+"fJ" = (/obj/machinery/atmospherics/valve{dir = 8; icon_state = "map_valve0"; name = "doom valve"},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "fK" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
-"fL" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{dir = 1},/turf/simulated/wall/ocp_wall,/area/roxlnyv/engineering)
+"fL" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{dir = 1},/obj/effect/paint/black,/turf/simulated/wall/ocp_wall,/area/roxlnyv/engineering)
 "fM" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/radiator)
 "fN" = (/obj/machinery/atmospherics/pipe/simple/hidden/universal,/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "fO" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{dir = 8; icon_state = "intact"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fP" = (/obj/random/junk,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
-"fQ" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/space,/area/roxlnyv/solar)
+"fQ" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow,/obj/machinery/power/solar{id = "rox_solar"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "fR" = (/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 6; icon_state = "intact"},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "fS" = (/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "fT" = (/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
@@ -331,14 +331,14 @@
 "gs" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "gt" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "gu" = (/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 10; icon_state = "intact"},/turf/simulated/floor/plating,/area/roxlnyv/shuttle)
-"gv" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 6; icon_state = "intact"},/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light{dir = 8},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"gv" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/random/maintenance,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "gw" = (/obj/machinery/portable_atmospherics/cracker,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "gx" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "gy" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/common)
 "gz" = (/obj/structure/window/reinforced/full,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/roxlnyv/hydroponics)
 "gA" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light/small/emergency{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "gB" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 2; id_tag = null},/obj/machinery/alarm{dir = 8; pixel_x = -25; pixel_y = 0; regulating_temperature = 1; req_access = null; target_temperature = 299.15},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
-"gC" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"gC" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "gD" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 9},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/radiator)
 "gE" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 5},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/radiator)
 "gF" = (/obj/machinery/atmospherics/pipe/manifold4w/hidden/cyan,/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
@@ -370,7 +370,7 @@
 "hf" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "hg" = (/obj/structure/catwalk,/turf/space,/area/roxlnyv/radiator)
 "hh" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/solar)
-"hi" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/space,/area/roxlnyv/solar)
+"hi" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "hj" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 9},/obj/structure/catwalk,/turf/space,/area/roxlnyv/radiator)
 "hk" = (/obj/effect/overmap/visitable/ship/roxlnyv/test,/turf/space,/area/space)
 "hl" = (/obj/structure/window/reinforced/full,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/roxlnyv/hydroponics)
@@ -380,7 +380,7 @@
 "hp" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; id_tag = null},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
 "hq" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "hr" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
-"hs" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
+"hs" = (/obj/machinery/light,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "ht" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "hu" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "hv" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
@@ -389,7 +389,7 @@
 "hy" = (/obj/machinery/access_button/airlock_interior{master_tag = "rox_dock_port"; pixel_y = 26},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "hz" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "hA" = (/obj/machinery/power/apc{dir = 2; locked = 0; name = "south bump"; operating = 1; pixel_y = -28},/obj/structure/cable/green,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/airlock)
-"hB" = (/obj/machinery/power/generator{anchored = 1},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"hB" = (/obj/machinery/power/generator{anchored = 1},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "hC" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "hD" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "hE" = (/obj/machinery/computer/fusion/core_control{dir = 8; icon_state = "computer"; initial_id_tag = "rox_fusion"; name = "\improper Tokamak core control"; req_access = null; tag = "rox_fusion"},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4; icon_state = "intact"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
@@ -408,12 +408,12 @@
 "hR" = (/obj/effect/floor_decal/snow,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "hS" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/machinery/floodlight{dir = 1},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "hT" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
-"hU" = (/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/port_gen/pacman/super{anchored = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"hU" = (/obj/machinery/power/generator{anchored = 1},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "hV" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/roxlnyv/common)
 "hW" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{dir = 8; icon_state = "intact"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/radiator)
 "hX" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/radiator)
-"hY" = (/obj/effect/floor_decal/solarpanel,/obj/machinery/power/tracker{id = "rox_solar"},/obj/structure/cable/yellow,/turf/space,/area/roxlnyv/solar)
-"hZ" = (/obj/effect/floor_decal/solarpanel,/obj/machinery/power/solar{id = "rox_solar"},/obj/structure/cable/yellow,/turf/space,/area/roxlnyv/solar)
+"hY" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
+"hZ" = (/obj/effect/floor_decal/solarpanel,/obj/machinery/power/tracker{id = "rox_solar"},/obj/structure/cable/yellow,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "ia" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/black,/obj/structure/dispenser/oxygen,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "ib" = (/obj/machinery/fabricator,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "ic" = (/turf/simulated/wall/r_wall/prepainted,/area/space)
@@ -436,7 +436,7 @@
 "it" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "iu" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/random/maintenance,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "iv" = (/obj/random/toolbox,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
-"iw" = (/obj/structure/catwalk,/obj/item/storage/box/lights/tubes,/obj/structure/closet/l3closet/janitor,/turf/simulated/floor/plating,/area/roxlnyv/engineering_lockers)
+"iw" = (/obj/structure/catwalk,/obj/item/storage/box/lights/tubes,/obj/structure/closet/jcloset,/turf/simulated/floor/plating,/area/roxlnyv/engineering_lockers)
 "ix" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "iy" = (/turf/space,/area/roxlnyv/engineering)
 "iz" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
@@ -454,11 +454,14 @@
 "iL" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction,/turf/simulated/floor/reinforced/airless,/area/roxlnyv/engineering)
 "iM" = (/obj/machinery/atmospherics/unary/tank/air,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
 "iN" = (/obj/machinery/atmospherics/unary/engine{dir = 1},/turf/space,/area/roxlnyv/engineering)
-"iO" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/cargo_bay)
+"iO" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/airlock)
 "iP" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/fuel_port,/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 9; icon_state = "intact"},/turf/simulated/wall/iron,/area/roxlnyv/shuttle)
 "iQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "iR" = (/obj/structure/cable/yellow,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{dir = 1; icon_state = "map"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "iS" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/unpowered/simple,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
+"iT" = (/obj/effect/floor_decal/solarpanel,/obj/machinery/power/solar{id = "rox_solar"},/obj/structure/cable/yellow,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
+"iU" = (/obj/structure/catwalk,/obj/structure/cable{dir = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"iV" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 
 (1,1,1) = {"
 abacadaeafagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -520,8 +523,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqdmdodwexeKbqbibSiCgcgdhqiiilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqdJeSfYfZgagbgkgmbciDitiziAilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqeIgzgghleIbqbibpbEiSiEiAiAilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacgeeteJgjgigobqcVhtbciGiHiAiMiminioaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagegjhogjhpgBbqbihububudgiObububuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacgeeteJgjgigobqcVhtbciGiHdpiMiminioaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagegjhogjhpgBbqbihububudgbubububuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaageetetgnhmhnbqbihvbubCbFcmcmcmbuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvbybybybAbBcvhwhxbucmczcBgXcDgLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvglbJbKbLbMcvbibkbucmcCguhacDgLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -531,19 +534,19 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzcFcncocrcscucGgAcydaeegwhNhOhPbZckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacZcZdhdjdkdkdldndldlcwcHcIbZcahQhRdibZckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabGcJcMcNcOcTdchyhzgqhMcVcXcYbZcabZdfifigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacJcPhAddddcSbicUbibibidebuibcahQhSihigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacZcZcZdpdydBdBdFdGdBdqbwdHdHdzdAejdCdEdHdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacJcPhAdGddcSbicUhsbibidebuibcahQhSihigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacZcZcZiOdydBdBdFdBdBdqbwdHdHdzdAejdCdEdHdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaekiwgrfjdLdMdNdQdRdSdHgMdXdUeudZdUecdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaekdIedefeggtegehegbIfKgNelemeneoepeqdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaekdIedefehgtegiVegbIfKgNelemeneoepeqdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadHdHeresdHdHdHejdEdCdHdUeDeveweyezfBdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadHhUdUdUdUgPgOdYeBeCaZeEeFeGeHeOeTeUdEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadrdHgveLeLeLeMeLeNfhePeLeQeRfteVfvgxhKdEaadsdsdsdsdsdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadtdtdHeWeXeYeXeZfaewfafbfcfdfefffcfggfikdHdudvdDdDdDdDdOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTdTdVdWeadEfihDfkhDflfafgfzfnfoiLfqfrfcfsgFiFdHaaebfufufufufuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVfEfMfMdEdxfxfwhBfyfadUfAfHfofpfCfIfcfsgFiFdHdufQdududududuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTghfDgDgEfOhchCfFhCfGfJgChEiIiJiKhLfIfcfsgFiFhdaaebdsdsdsdsdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVhgdtdtdHdHdHdHdHfNdHhsdHhFfcfcfcfLfcdHhehfhhhidDdDdDdDdDdOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdThjdPhWhXfRfSfSfTfTfUfVfViQgsgHgHfWfXgHgHgIdHhdhYfuhZfufufufuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadHdxdUdUdUgPgOdYeBeCaZeEeFeGeHeOeTeUdEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadrdHeMeNeNeNePeNeWeZfheLeQeRfteVfvgxhKdEaadvdvdvdvdvdvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadtdtdHfieXeYeXflfaewfafbfcfdfefffcfggfikdHdudDdOdOdOdOebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTdTdVdWeadEfxhDfkhDfyfafgfzfnfoiLfqfrfcfsgFiFdHaafufQfQfQfQfQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVfEfMfMdEgvhBfwhUiUfadUfAfHfofpfCfIfcfsgFiFdHduhidududududuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTghfDgDgEfOhchCfFhCfGfJgChEiIiJiKhLfIfcfsgFiFhdaafudsdvdvdvdvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVhgdtdtdHdHdHdHdHfNdHdHdHhFfcfcfcfLfcdHhehfhhhYdOdOdOdOdOebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdThjdPhWhXfRfSfSfTfTfUfVfViQgsgHgHfWfXgHgHgIdHhdhZfQiTfQfQfQfQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVfEaadtgKhGhGgJgJiRgGiRgJiRixiRgJhHhGhGhIdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdThjfEdtdtiyiyhJdHdHiNiyiNdHiNiyiNdHdHhJiyiydHdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdThjdtdtaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadHdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

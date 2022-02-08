@@ -44,6 +44,7 @@
 		var/dif = text2num(href_list["str"])
 		field_strength = min(max(field_strength + dif, MIN_FIELD_STR), MAX_FIELD_STR)
 		change_power_consumption(500 * field_strength, POWER_USE_ACTIVE)
+		log_world("Topic field strength [field_strength]")
 		if(owned_field)
 			owned_field.ChangeFieldStrength(field_strength)
 
@@ -131,25 +132,25 @@
 	. = TRUE
 
 
-/obj/machinery/power/fusion_core/russian
+/obj/machinery/power/fusion_core/thermal
 	name = "\improper Pskov-7 Tokamak core"
 	desc = "An enormous solenoid for generating extremely high power electromagnetic fields. For the fatherland!"
 	can_harvest = FALSE
+	anchored = TRUE
 
 
 /obj/machinery/power/fusion_core/thermal/Startup()
 	if(owned_field)
 		return
 	owned_field = new /obj/effect/fusion_em_field/thermal(loc, src)
-	owned_field.ChangeFieldStrength(field_strength)
+	owned_field.ChangeFieldStrength(600.0)
 	icon_state = "core1"
 	update_use_power(POWER_USE_ACTIVE)
 	return 1
 
-/obj/machinery/power/fusion_core/thermal/jumpstart(var/field_temperature)
-	field_strength = 60
-	Startup()
-	if(!owned_field)
-		return FALSE
-	owned_field.plasma_temperature = field_temperature
-	return TRUE
+/obj/machinery/power/fusion_core/thermal/set_strength(var/value)
+	value = clamp(value, MIN_FIELD_STR, MAX_FIELD_STR)
+	field_strength = 600.0 //value
+	change_power_consumption(5 * value, POWER_USE_ACTIVE)
+	if(owned_field)
+		owned_field.ChangeFieldStrength(value)

@@ -113,7 +113,10 @@
 	name = "\improper ROXLNYV - Solar Array"
 	icon_state = "gantry_yacht_down"
 	area_flags = AREA_FLAG_EXTERNAL
-	has_gravity = 0
+	has_gravity = FALSE
+	requires_power = 1
+	always_unpowered = 1
+	base_turf = /turf/space
 
 /obj/structure/closet/hydroponics
 	name = "botanist's locker"

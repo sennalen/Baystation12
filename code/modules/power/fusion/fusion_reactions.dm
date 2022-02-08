@@ -173,20 +173,21 @@ proc/get_fusion_reaction(var/p_react, var/s_react, var/m_energy)
 
 
 
-//tweaked reactions for the thermal reactor
-//not a subclass so the existing code doesn't iterate over these
+//=============================================================================
+//Alternative reactions for the thermal reactor
+//It's deliberately not a subclass so the existing code doesn't iterate over these
+//=============================================================================
 
 /decl/thermal_fusion_reaction
 	var/list/reagents = list()
 	var/list/products = list()
 	var/minimum_temperature = 0 //K
-	var/base_rate = 0.0
 	var/temperature_coeff = 0.0
 	var/temperature_quad = 0.0
-	var/density_coeff = 0.0
+	var/density_coeff = 1.0
 	var/energy_delta = 0 //MeV
-	var/release_always = FALSE //Always do this 100% when turning back into XGM gas
 	var/release_only = FALSE //Only do this when turning back into XGM gas
+
 
 proc/get_thermal_fusion_reactions()
 	if(!thermal_fusion_reactions)
@@ -197,38 +198,34 @@ proc/get_thermal_fusion_reactions()
 	return thermal_fusion_reactions
 
 
-/decl/thermal_fusion_reaction/free_neutron
-	reagents = list("neutron")
-	energy_delta = 14.1
-	products = list()
-	release_always = TRUE
-	base_rate = 0.999
-
 /decl/thermal_fusion_reaction/beta_decay
 	reagents = list("neutron")
 	energy_delta = 0.78
 	products = list(GAS_HYDROGEN)
-	base_rate = 1.0/877.0
+	density_coeff = 1.0/877.0
+
+/decl/thermal_fusion_reaction/beta_decay_tritium
+	reagents = list("tritium")
+	energy_delta = 0.01
+	products = list("helium3")
+	density_coeff = 3e-6
 
 /decl/thermal_fusion_reaction/deuterium_xgm
 	reagents = list("deuterium")
 	energy_delta = 12e-6
 	products = list(GAS_HYDROGEN)
-	release_always = TRUE
 	release_only = TRUE
 
 /decl/thermal_fusion_reaction/tritium_xgm
 	reagents = list("tritium")
 	energy_delta = 24e-6
 	products = list(GAS_HYDROGEN)
-	release_always = TRUE
 	release_only = TRUE
 
 /decl/thermal_fusion_reaction/helium3_xgm
 	reagents = list("helium3")
 	energy_delta = 12e-6
 	products = list(GAS_HELIUM)
-	release_always = TRUE
 	release_only = TRUE
 
 /decl/thermal_fusion_reaction/hydrogen_hydrogen
@@ -278,14 +275,6 @@ proc/get_thermal_fusion_reactions()
 
 /decl/thermal_fusion_reaction/deuterium_helium3
 	reagents = list("deuterium", "helium3")
-	energy_delta = 18.3
-	products = list(GAS_HELIUM, GAS_HYDROGEN)
-	minimum_temperature = 5e6
-	temperature_coeff = 4.26e-7
-	temperature_quad = -2e-9
-
-/decl/thermal_fusion_reaction/tritium_helium3
-	reagents = list("tritium", "helium3")
 	energy_delta = 18.3
 	products = list(GAS_HELIUM, GAS_HYDROGEN)
 	minimum_temperature = 5e6
