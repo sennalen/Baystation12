@@ -1,26 +1,26 @@
 "aa" = (/turf/space,/area/space)
-"ab" = (/turf/simulated/floor/plating,/area/space)
+"ab" = (/obj/structure/catwalk,/obj/machinery/computer/ship/navigation{light_max_bright_on = 0.5},/turf/simulated/floor/plating,/area/roxlnyv/bridge)
 "ac" = (/turf/simulated/floor/reinforced,/area/space)
-"ad" = (/turf/simulated/floor/steel_dirty,/area/space)
-"ae" = (/turf/simulated/floor/tiled,/area/space)
-"af" = (/turf/simulated/floor/tiled/dark,/area/space)
-"ag" = (/turf/simulated/floor/tiled/freezer,/area/space)
-"ah" = (/turf/simulated/floor/tiled/steel_grid,/area/space)
-"ai" = (/turf/simulated/floor/tiled/steel_ridged,/area/space)
-"aj" = (/turf/simulated/floor/tiled/techfloor,/area/space)
-"ak" = (/turf/simulated/floor/tiled/techfloor/grid,/area/space)
-"al" = (/turf/simulated/floor/tiled/techmaint,/area/space)
-"am" = (/turf/simulated/floor/greengrid,/area/space)
+"ad" = (/obj/machinery/computer/ship/helm{light_max_bright_on = 0.2},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/bridge)
+"ae" = (/obj/structure/catwalk,/obj/machinery/computer/power_monitor{light_max_bright_on = 1; light_outer_range_on = 3},/turf/simulated/floor/plating,/area/roxlnyv/bridge)
+"af" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/bridge)
+"ag" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
+"ah" = (/obj/structure/grille,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
+"ai" = (/obj/structure/catwalk,/obj/machinery/door/airlock,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/bridge)
+"aj" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/airless,/area/roxlnyv/bridge)
+"ak" = (/obj/machinery/shipsensors/weak,/turf/simulated/floor/reinforced,/area/roxlnyv/bridge)
+"al" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
+"am" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/bridge)
 "an" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/scoop)
 "ao" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/bridge)
-"ap" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/scoop)
+"ap" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc/roxlnyv{dir = 8; pixel_x = -26},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/scoop)
 "aq" = (/obj/effect/wallframe_spawn/reinforced/titanium,/turf/simulated/floor/plating,/area/roxlnyv/bridge)
-"ar" = (/obj/structure/catwalk,/obj/machinery/computer/ship/navigation,/turf/simulated/floor/plating,/area/roxlnyv/bridge)
-"as" = (/obj/machinery/computer/ship/helm,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/bridge)
-"at" = (/obj/structure/catwalk,/obj/machinery/computer/power_monitor,/turf/simulated/floor/plating,/area/roxlnyv/bridge)
-"au" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
-"av" = (/obj/structure/bed/chair/shuttle{dir = 1},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
-"aw" = (/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/light/small/emergency{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
+"ar" = (/obj/machinery/power/apc/roxlnyv{dir = 8; pixel_x = -26},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
+"as" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
+"at" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/roxlnyv/corridor)
+"au" = (/obj/machinery/power/apc/roxlnyv{dir = 8; pixel_x = -26},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
+"av" = (/obj/structure/bed/chair/shuttle{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
+"aw" = (/obj/machinery/light/small/emergency{dir = 4},/obj/machinery/power/apc/roxlnyv{dir = 4; pixel_x = 26},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
 "ax" = (/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
 "ay" = (/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/bridge)
 "az" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/bridge)
@@ -30,7 +30,7 @@
 "aD" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
 "aE" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; level = 2},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/bridge)
 "aF" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/common)
-"aG" = (/obj/structure/bed/chair/comfy{dir = 1},/obj/machinery/alarm{dir = 4; pixel_x = -25; pixel_y = 0},/obj/machinery/floor_light/prebuilt,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
+"aG" = (/obj/structure/bed/chair/comfy{dir = 1},/obj/machinery/floor_light/prebuilt,/obj/machinery/alarm/roxlnyv{dir = 4; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
 "aH" = (/obj/structure/bed/chair/comfy{dir = 1},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/floor_light/prebuilt,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
 "aI" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
 "aJ" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/random/trash,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
@@ -49,26 +49,21 @@
 "aW" = (/obj/machinery/computer/telecomms/monitor{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/communication)
 "aX" = (/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/communication)
 "aY" = (/obj/machinery/computer/telecomms/server{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/communication)
-"aZ" = (/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"aZ" = (/obj/random/date_based/christmas/tree,/obj/machinery/alarm/roxlnyv{dir = 4; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
 "ba" = (/obj/structure/catwalk,/obj/machinery/atmospherics/binary/pump/on,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/scoop)
 "bb" = (/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/common)
 "bc" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/sleeping)
-"bd" = (/obj/structure/catwalk,/obj/machinery/door/airlock,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/common)
+"bd" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "be" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/computer/ship/sensors{print_language = "Pan-Slavic"},/turf/simulated/floor/plating,/area/roxlnyv/bridge)
-"bf" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
-"bg" = (/obj/structure/grille,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/bridge)
-"bh" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/common)
+"bf" = (/obj/machinery/power/apc/roxlnyv{dir = 8; pixel_x = -26},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
+"bg" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/airless,/area/roxlnyv/common)
 "bi" = (/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
-"bj" = (/obj/machinery/shipsensors/weak,/turf/simulated/floor/reinforced,/area/roxlnyv/common)
 "bk" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "bl" = (/obj/machinery/door/airlock/multi_tile,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "bm" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
-"bn" = (/obj/machinery/alarm{dir = 4; pixel_x = -25; pixel_y = 0},/obj/random/date_based/christmas/tree,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
 "bo" = (/obj/machinery/atmospherics/pipe/simple/visible/supply{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
-"bp" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "bq" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/hydroponics)
 "br" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/hydroponics)
-"bs" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
 "bt" = (/obj/machinery/telecomms/broadcaster/map_preset,/turf/simulated/floor/greengrid,/area/roxlnyv/communication)
 "bu" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/cargo_bay)
 "bv" = (/obj/structure/table/woodentable/walnut,/obj/item/storage/bible/bible,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
@@ -89,14 +84,13 @@
 "bK" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 4; icon_state = "intact"},/obj/structure/catwalk,/obj/machinery/computer/atmoscontrol,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "bL" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 10; icon_state = "intact"},/obj/structure/catwalk,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "bM" = (/obj/machinery/atmospherics/pipe/simple/visible,/obj/structure/catwalk,/obj/structure/closet/emcloset,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
-"bN" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/obj/structure/catwalk,/obj/machinery/alarm{dir = 4; pixel_x = -25; pixel_y = 0},/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
+"bN" = (/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/structure/table/steel,/obj/random/plushie,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
 "bO" = (/obj/machinery/atmospherics/omni/filter{tag_east = 3; tag_north = 1; tag_south = 4; tag_west = 2},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/atmosphere)
 "bP" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 10; icon_state = "intact"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "bQ" = (/obj/machinery/pointdefense_control{initial_id_tag = "rox_pd"},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/bridge)
-"bR" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/common)
 "bS" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "bT" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 5; icon_state = "intact"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
-"bU" = (/obj/machinery/atmospherics/omni/mixer{tag_north = 1; tag_north_con = 0.3; tag_south = 2; tag_west = 1; tag_west_con = 0.7},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/atmosphere)
+"bU" = (/obj/machinery/atmospherics/omni/mixer{tag_north = 1; tag_north_con = 0.28; tag_south = 2; tag_west = 1; tag_west_con = 0.72},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/atmosphere)
 "bV" = (/obj/machinery/atmospherics/pipe/manifold/visible/scrubbers{dir = 8},/obj/structure/catwalk,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "bW" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/atmosphere)
 "bX" = (/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/item/device/integrated_circuit_printer,/turf/simulated/floor/greengrid,/area/roxlnyv/communication)
@@ -110,7 +104,7 @@
 "cf" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "cg" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/door/airlock,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/atmosphere)
 "ch" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/roxlnyv/corridor)
-"ci" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/structure/table/steel,/obj/random/plushie,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
+"ci" = (/obj/structure/cable/green,/obj/machinery/power/apc/roxlnyv{dir = 2; pixel_y = -26},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/communication)
 "cj" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "ck" = (/obj/machinery/door/blast/regular{dir = 4},/turf/simulated/floor/reinforced,/area/roxlnyv/cargo_bay)
 "cl" = (/turf/simulated/floor/reinforced,/area/roxlnyv/cargo_bay)
@@ -121,7 +115,7 @@
 "cq" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/item/device/integrated_electronics/analyzer,/obj/item/device/integrated_electronics/debugger,/obj/item/device/integrated_electronics/wirer,/turf/simulated/floor/greengrid,/area/roxlnyv/communication)
 "cr" = (/obj/machinery/atmospherics/binary/pump{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "cs" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/manifold/visible/scrubbers,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
-"ct" = (/obj/machinery/power/apc{dir = 2; name = "south bump"; operating = 1; pixel_y = -28},/obj/structure/cable/green,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/communication)
+"ct" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/alarm/roxlnyv{dir = 4; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
 "cu" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/visible/scrubbers{dir = 4},/obj/machinery/meter,/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "cv" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/atmosphere)
 "cw" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
@@ -129,13 +123,12 @@
 "cy" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "cz" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/computer/ship/engines{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/fuel,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/shuttle)
 "cA" = (/obj/machinery/telecomms/hub/map_preset,/obj/machinery/floor_light/prebuilt,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/communication)
-"cB" = (/obj/structure/bed/chair/shuttle{dir = 4; icon_state = "shuttle_chair_preview"},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/shuttle)
+"cB" = (/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/flora/pottedplant/large,/obj/machinery/power/apc/roxlnyv{dir = 1; pixel_y = 26},/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
 "cC" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{dir = 8; icon_state = "map"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/shuttle)
 "cD" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/shuttle)
 "cE" = (/obj/machinery/light/small/emergency{dir = 8},/obj/structure/hygiene/sink/kitchen,/obj/structure/table/steel,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
 "cF" = (/obj/machinery/atmospherics/pipe/simple/hidden/black{dir = 4; icon_state = "intact"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/atmosphere)
 "cG" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/atmosphere)
-"cH" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/roxlnyv/corridor)
 "cI" = (/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "cJ" = (/obj/machinery/door/airlock/external/bolted/cycling{id_tag = "rox_dock_ext"},/turf/simulated/floor/reinforced,/area/roxlnyv/airlock)
 "cK" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/bed/chair/wood{dir = 4; holographic = 1; icon_state = "wooden_chair_preview"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/common)
@@ -151,7 +144,7 @@
 "cU" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "cV" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; level = 2},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "cW" = (/obj/machinery/telecomms/server/map_preset,/turf/simulated/floor/greengrid,/area/roxlnyv/communication)
-"cX" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
+"cX" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating/airless,/area/roxlnyv/corridor)
 "cY" = (/obj/machinery/door/airlock/multi_tile/glass/research{dir = 8; icon_state = "closed"; id_tag = ""; name = "Cargo Bay"},/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "cZ" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/airlock)
 "da" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/cargo_bay)
@@ -176,7 +169,7 @@
 "dt" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/radiator)
 "du" = (/obj/structure/catwalk,/turf/space,/area/roxlnyv/solar)
 "dv" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/solar{id = "rox_solar"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
-"dw" = (/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/flora/pottedplant/large,/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
+"dw" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 2; id_tag = null},/obj/machinery/alarm/roxlnyv/hydroponics{dir = 8; pixel_x = 24},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
 "dx" = (/obj/machinery/power/port_gen/pacman/super{anchored = 1},/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "dy" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering_lockers)
 "dz" = (/obj/machinery/door/blast/shutters,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
@@ -210,7 +203,6 @@
 "eb" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "ec" = (/obj/machinery/fusion_fuel_compressor,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "ed" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; level = 2},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
-"ee" = (/obj/machinery/alarm{dir = 4; pixel_x = -25; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "ef" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "eg" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "eh" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
@@ -221,7 +213,7 @@
 "em" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "en" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "eo" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/manifold/visible/cyan{dir = 1},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"ep" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"ep" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{dir = 1},/obj/effect/floor_decal/corner_techfloor_grid{dir = 9; icon_state = "corner_techfloor_grid"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "eq" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/hydrogen{anchored = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "er" = (/obj/machinery/door/airlock/multi_tile,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "es" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
@@ -236,7 +228,7 @@
 "eB" = (/obj/machinery/power/smes/buildable/preset/on_full,/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "eC" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 1; icon_state = "map_scrubber_off"; id_tag = "rox_dock_pump"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "eD" = (/obj/machinery/atmospherics/pipe/manifold/visible{dir = 8; icon_state = "map"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
-"eE" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"eE" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/corner_techfloor_grid,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "eF" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/binary/pump/on{target_pressure = 0.5},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "eG" = (/obj/machinery/power/smes/buildable/preset/on_full{_input_maxed = 0},/obj/structure/cable/green,/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
 "eH" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering)
@@ -267,7 +259,7 @@
 "fg" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; id_tag = null},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "fh" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/machinery/button/blast_door{id_tag = "rox_fusion_door"; name = "tokamak blast door-control"; pixel_x = 23; pixel_y = -23},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fi" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 6},/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"fj" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = newlist()},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/closet/crate/uranium,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
+"fj" = (/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/machinery/light{dir = 8; lightbulb = /obj/item/light/tube/warm},/obj/machinery/power/apc/roxlnyv{dir = 8; pixel_x = -26},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
 "fk" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fl" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 10},/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fm" = (/obj/machinery/pointdefense{initial_id_tag = "rox_pd"},/turf/simulated/floor/reinforced,/area/roxlnyv/sleeping)
@@ -281,7 +273,7 @@
 "fu" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/power/solar{id = "rox_solar"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "fv" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4; icon_state = "intact"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fw" = (/obj/structure/catwalk,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
-"fx" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 5; icon_state = "intact"},/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"fx" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating/airless,/area/roxlnyv/corridor)
 "fy" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow{dir = 9},/obj/structure/catwalk,/obj/machinery/meter,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fz" = (/obj/machinery/computer/fusion/fuel_control{dir = 8; icon_state = "computer"; initial_id_tag = "rox_fusion"; req_access = list("ACCESS_ENGINE_EQUIP")},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "fA" = (/obj/machinery/computer/fusion/gyrotron{dir = 8; icon_state = "computer"; initial_id_tag = "rox_fusion"; req_access = list("ACCESS_ENGINE_EQUIP")},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
@@ -312,7 +304,7 @@
 "fZ" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
 "ga" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/dark,/area/roxlnyv/hydroponics)
 "gb" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
-"gc" = (/obj/machinery/alarm{dir = 4; pixel_x = -25; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
+"gc" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/obj/structure/catwalk,/obj/machinery/alarm/roxlnyv{dir = 4; pixel_x = -24},/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "gd" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "ge" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/floor/plating,/area/roxlnyv/hydroponics)
 "gf" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/catwalk,/obj/machinery/meter,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
@@ -326,18 +318,18 @@
 "gn" = (/obj/structure/reagent_dispensers/watertank,/obj/item/reagent_containers/glass/bucket,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
 "go" = (/obj/machinery/portable_atmospherics/hydroponics,/obj/machinery/light{dir = 4},/obj/item/seeds/cabbageseed,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
 "gp" = (/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
-"gq" = (/obj/machinery/alarm{alarm_id = "xenobio1_alarm"; dir = 2; icon_state = "alarm0"; pixel_x = 0; pixel_y = 24},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
-"gr" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 4},/obj/machinery/alarm{alarm_id = "xenobio1_alarm"; dir = 2; icon_state = "alarm0"; pixel_x = 0; pixel_y = 24},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
+"gq" = (/obj/structure/bed/chair/shuttle{dir = 4; icon_state = "shuttle_chair_preview"},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/catwalk,/obj/machinery/power/apc/roxlnyv{dir = 1; pixel_y = 26},/turf/simulated/floor/plating,/area/roxlnyv/shuttle)
+"gr" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 9; icon_state = "intact"},/obj/structure/catwalk,/obj/machinery/power/apc/roxlnyv{dir = 4; pixel_x = 26},/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
 "gs" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "gt" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "gu" = (/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 10; icon_state = "intact"},/turf/simulated/floor/plating,/area/roxlnyv/shuttle)
-"gv" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/random/maintenance,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"gv" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/plating/airless,/area/roxlnyv/corridor)
 "gw" = (/obj/machinery/portable_atmospherics/cracker,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "gx" = (/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "gy" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/common)
 "gz" = (/obj/structure/window/reinforced/full,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/plating,/area/roxlnyv/hydroponics)
 "gA" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/light/small/emergency{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
-"gB" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 2; id_tag = null},/obj/machinery/alarm{dir = 8; pixel_x = -25; pixel_y = 0; regulating_temperature = 1; req_access = null; target_temperature = 299.15},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/hydroponics)
+"gB" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/alarm/roxlnyv{dir = 4; pixel_x = -24},/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "gC" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 4},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "gD" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 9},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/radiator)
 "gE" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 5},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/radiator)
@@ -350,10 +342,10 @@
 "gL" = (/obj/effect/wallframe_spawn/reinforced,/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/cargo_bay)
 "gM" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "gN" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 4},/obj/structure/catwalk,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light{dir = 8},/obj/structure/closet/toolcloset,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
-"gO" = (/obj/machinery/alarm{alarm_id = "xenobio1_alarm"; dir = 2; icon_state = "alarm0"; pixel_x = 0; pixel_y = 24},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"gO" = (/obj/machinery/alarm/roxlnyv{pixel_y = 26},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "gP" = (/obj/machinery/computer/ship/engines,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "gQ" = (/obj/machinery/atmospherics/omni/filter{tag_east = 5; tag_north = 2; tag_south = 1},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/atmosphere)
-"gR" = (/obj/machinery/atmospherics/pipe/simple/visible{dir = 9; icon_state = "intact"},/obj/structure/catwalk,/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 24},/obj/structure/cable/green{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/plating,/area/roxlnyv/atmosphere)
+"gR" = (/obj/machinery/power/apc/roxlnyv{dir = 8; pixel_x = -26},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/random/maintenance,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "gS" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/turf/simulated/floor/plating,/area/roxlnyv/common)
 "gT" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/common)
 "gU" = (/obj/structure/bed/chair/wood{dir = 1},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/common)
@@ -364,7 +356,7 @@
 "gZ" = (/obj/machinery/portable_atmospherics/canister/air{anchored = 1},/obj/machinery/atmospherics/portables_connector{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/shuttle)
 "ha" = (/obj/machinery/computer/shuttle{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/shuttle)
 "hb" = (/obj/machinery/door/airlock,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/shuttle)
-"hc" = (/obj/machinery/atmospherics/pipe/manifold/hidden/yellow,/obj/structure/catwalk,/obj/machinery/meter,/turf/simulated/floor/plating,/area/roxlnyv/engineering)
+"hc" = (/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 5; icon_state = "intact"},/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/airless,/area/roxlnyv/engineering)
 "hd" = (/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/solar)
 "he" = (/obj/machinery/atmospherics/binary/passive_gate/on{dir = 1; regulate_mode = 0},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
 "hf" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
@@ -381,14 +373,10 @@
 "hq" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "hr" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "hs" = (/obj/machinery/light,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
-"ht" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
-"hu" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
-"hv" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
-"hw" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
-"hx" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/cyan,/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating,/area/roxlnyv/corridor)
+"hw" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 4},/obj/machinery/alarm/roxlnyv{pixel_y = 26},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "hy" = (/obj/machinery/access_button/airlock_interior{master_tag = "rox_dock_port"; pixel_y = 26},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "hz" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
-"hA" = (/obj/machinery/power/apc{dir = 2; locked = 0; name = "south bump"; operating = 1; pixel_y = -28},/obj/structure/cable/green,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/airlock)
+"hA" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/closet/crate/uranium,/obj/machinery/power/apc/roxlnyv{dir = 1; pixel_y = 26},/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
 "hB" = (/obj/machinery/power/generator{anchored = 1},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "hC" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "hD" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
@@ -420,7 +408,7 @@
 "id" = (/obj/machinery/pointdefense{initial_id_tag = "rox_pd"},/obj/structure/catwalk,/turf/space,/area/roxlnyv/radiator)
 "ie" = (/obj/machinery/pointdefense{initial_id_tag = "rox_pd"},/obj/structure/catwalk,/turf/space,/area/roxlnyv/engineering)
 "if" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/ice,/area/roxlnyv/cargo_bay)
-"ig" = (/turf/simulated/floor/snow,/area/roxlnyv/cargo_bay)
+"ig" = (/turf/simulated/floor/plating/airless,/area/roxlnyv/cargo_bay)
 "ih" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/snow,/area/roxlnyv/cargo_bay)
 "ii" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8; level = 2},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
 "ij" = (/obj/structure/disposalpipe/segment,/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/sleeping)
@@ -434,7 +422,7 @@
 "ir" = (/obj/machinery/light{dir = 4},/obj/machinery/disposal,/obj/structure/disposalpipe/trunk,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/common)
 "is" = (/obj/machinery/atmospherics/unary/vent_scrubber{dir = 4},/obj/machinery/light{dir = 8; flickering = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/corridor)
 "it" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
-"iu" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/random/maintenance,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
+"iu" = (/obj/machinery/alarm/roxlnyv{pixel_y = 26},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "iv" = (/obj/random/toolbox,/turf/simulated/floor/plating,/area/roxlnyv/cargo_bay)
 "iw" = (/obj/structure/catwalk,/obj/item/storage/box/lights/tubes,/obj/structure/closet/jcloset,/turf/simulated/floor/plating,/area/roxlnyv/engineering_lockers)
 "ix" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/engineering)
@@ -443,7 +431,7 @@
 "iA" = (/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "iB" = (/obj/structure/table/gamblingtable,/obj/structure/catwalk,/obj/item/deck/cards,/turf/simulated/floor/plating,/area/roxlnyv/common)
 "iC" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/wall/r_wall/prepainted,/area/roxlnyv/sleeping)
-"iD" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/machinery/light{dir = 8; lightbulb = /obj/item/light/tube/warm},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
+"iD" = (/obj/machinery/power/apc/roxlnyv{dir = 2; pixel_y = -26},/obj/structure/cable/green,/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/airlock)
 "iE" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/window/reinforced/tinted/frosted{dir = 8},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/roxlnyv/sleeping)
 "iF" = (/obj/machinery/atmospherics/unary/tank/hydrogen{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
 "iG" = (/obj/structure/hygiene/toilet{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/sleeping)
@@ -462,10 +450,14 @@
 "iT" = (/obj/effect/floor_decal/solarpanel,/obj/machinery/power/solar{id = "rox_solar"},/obj/structure/cable/yellow,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/solar)
 "iU" = (/obj/structure/catwalk,/obj/structure/cable{dir = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/roxlnyv/engineering)
 "iV" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/light,/turf/simulated/floor/tiled/techfloor/grid,/area/roxlnyv/engineering_lockers)
+"iW" = (/obj/machinery/power/apc/roxlnyv{dir = 1; pixel_y = 26},/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor,/area/roxlnyv/engineering)
+"iX" = (/turf/simulated/floor/tiled/techfloor/carbondioxide,/area/roxlnyv/hydroponics)
+"iY" = (/obj/machinery/atmospherics/pipe/simple/hidden/yellow,/obj/structure/catwalk,/obj/random/maintenance,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating/airless,/area/roxlnyv/engineering)
+"iZ" = (/obj/machinery/atmospherics/pipe/manifold/hidden/yellow,/obj/structure/catwalk,/obj/machinery/meter,/turf/simulated/floor/plating/airless,/area/roxlnyv/engineering)
 
 (1,1,1) = {"
-abacadaeafagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-ahaiajakalamaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -509,42 +501,42 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaananapananaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahkaaaaaaanaUanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoaqaqaqaoaaanaVanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqarasataqaaanbaanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoauavawaoaoaFbdaFaFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaxazaAaCaDbfbhaFaFbjaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeAaqaBaEbebgbQbsbRaFaFaFaFaFaFaFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqabadaeaqaaanbaanaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoauavawaoaoaoaiaoaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqaxazaAaCaDaDajaoaoakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeAaqaBaEbeafbQalamaoaFaFaFaFaFaFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoaoaGayaHaoaohTgyaIaJaKaLaMaOaFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaQaRaPaPgpgSaFgpaTbbbbaShVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaWaQaXbxaYaPgpgSaFbncKiBeigphVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbtaQaXbxbDaPblbkaFcigTbbgUfPaFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbYbXcpcqcAaPbibkaFgVaTipiqiraFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPcLctaXcQcWaPbibkbcbchrbcbcijbcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaQaRaPaPgpgSaFbfbgbbbbaShVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaWaQaXbxaYaPgpgSaFaZcKiBeigphVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbtaQaXbxbDaPcVagahbNgTbbgUfPaFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPbYbXcpcqcAaPbicXaFgVaTipiqiraFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPcLciaXcQcWaPbibkbcbchrbcbcijbcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacRbqbqbqbqbrbqbqisbmbccEdbbvdKijbcfmaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqdmdodwexeKbqbibSiCgcgdhqiiilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqdJeSfYfZgagbgkgmbciDitiziAilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqeIgzgghleIbqbibpbEiSiEiAiAilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacgeeteJgjgigobqcVhtbciGiHdpiMiminioaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagegjhogjhpgBbqbihububudgbubububuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaageetetgnhmhnbqbihvbubCbFcmcmcmbuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvbybybybAbBcvhwhxbucmczcBgXcDgLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqdmdocBexeKbqbibSiCctgdhqiiilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqdJeSfYfZgagbgkgmbcfjitiziAilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacbqeIgzgghleIbqarasbEiSiEiAiAilbcicaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacgeeteJgjgigobqbiatbciGiHdpiMiminioaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaageiXhogjhpdwbqblbdbubudgbubububuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaageetetgnhmhnbqbibkbubCbFcmcmcmbuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvbybybybAbBcvbibkbucmczgqgXcDgLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvglbJbKbLbMcvbibkbucmcCguhacDgLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvbNbObPgQgRcvbHbmbucmgWgYgZcDgLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvgcbObPgQgrcvbHbmbucmgWgYgZcDgLaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacviabTbUbVbWcvbibkbubCiPhbcmcmbububuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvcbbocdcccecgcfchbuiucjbZivcxbZckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzcFcncocrcscucGgAcydaeegwhNhOhPbZckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacZcZdhdjdkdkdldndldlcwcHcIbZcahQhRdibZckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabGcJcMcNcOcTdchyhzgqhMcVcXcYbZcabZdfifigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacJcPhAdGddcSbicUhsbibidebuibcahQhSihigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacvcbbocdcccecgcfchbugRcjbZivcxigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzcFcncocrcscucGgAcydagBgwhNhOhPigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacZcZdhdjdkdkdldndldlcwfxcIbZcahQhRdiigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabGcJcMcNcOcTdchyhzgOhMcVgvcYbZcabZdfifigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacJcPiDdGddcSbicUhsbibidebuibcahQhSihigckclaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacZcZcZiOdydBdBdFdBdBdqbwdHdHdzdAejdCdEdHdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaekiwgrfjdLdMdNdQdRdSdHgMdXdUeudZdUecdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaekiwhwhAdLdMdNdQdRdSdHgMdXdUeudZdUecdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaekdIedefehgtegiVegbIfKgNelemeneoepeqdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadHdHeresdHdHdHejdEdCdHdUeDeveweyezfBdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadHdxdUdUdUgPgOdYeBeCaZeEeFeGeHeOeTeUdEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadHdxdUdUdUgPiudYeBeCiWeEeFeGeHeOeTeUdEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadrdHeMeNeNeNePeNeWeZfheLeQeRfteVfvgxhKdEaadvdvdvdvdvdvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadtdtdHfieXeYeXflfaewfafbfcfdfefffcfggfikdHdudDdOdOdOdOebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTdTdVdWeadEfxhDfkhDfyfafgfzfnfoiLfqfrfcfsgFiFdHaafufQfQfQfQfQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVfEfMfMdEgvhBfwhUiUfadUfAfHfofpfCfIfcfsgFiFdHduhidududududuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTghfDgDgEfOhchCfFhCfGfJgChEiIiJiKhLfIfcfsgFiFhdaafudsdvdvdvdvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTdTdVdWeadEhchDfkhDfyfafgfzfnfoiLfqfrfcfsgFiFdHaafufQfQfQfQfQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVfEfMfMdEiYhBfwhUiUfadUfAfHfofpfCfIfcfsgFiFdHduhidududududuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdTghfDgDgEfOiZhCfFhCfGfJgChEiIiJiKhLfIfcfsgFiFhdaafudsdvdvdvdvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVhgdtdtdHdHdHdHdHfNdHdHdHhFfcfcfcfLfcdHhehfhhhYdOdOdOdOdOebaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadPdTdThjdPhWhXfRfSfSfTfTfUfVfViQgsgHgHfWfXgHgHgIdHhdhZfQiTfQfQfQfQaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafDdTdTdVfEaadtgKhGhGgJgJiRgGiRgJiRixiRgJhHhGhGhIdHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

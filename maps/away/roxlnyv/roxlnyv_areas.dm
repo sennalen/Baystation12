@@ -27,10 +27,10 @@
 		/datum/job/submap/scavver_engineer
 	)
 
-/obj/effect/overmap/visitable/ship/roxlnyv/test
+/obj/effect/overmap/visitable/ship/roxlnyv
 	name = "Unknown Vessel"
 	desc = "Sensor array detects a medium-sized vessel of irregular shape. It is transmitting Terran-origin civilian transponder codes."
-	vessel_mass = 6000
+	vessel_mass = 5500
 	fore_dir = NORTH
 	burn_delay = 2 SECONDS
 	hide_from_reports = TRUE
@@ -41,6 +41,10 @@
 	initial_restricted_waypoints = list(
 
 	)
+
+
+/obj/effect/overmap/visitable/ship/roxlnyv/test
+	name = "ITV Potato"
 
 
 /area/roxlnyv
@@ -131,3 +135,33 @@
 		/obj/item/material/hatchet,
 		/obj/item/wirecutters/clippers,
 	)
+
+
+/obj/machinery/power/apc/roxlnyv
+	cell_type = /obj/item/cell/crap
+	locked = 0
+	coverlocked = 0
+
+
+/obj/machinery/alarm/roxlnyv
+	target_temperature = T0C+16
+	breach_pressure = 0.2
+	breach_cooldown = 10
+	req_access = list()
+	locked = 0
+
+/obj/machinery/alarm/roxlnyv/Initialize()
+	. = ..()
+	TLV["temperature"] = list(T0C-27, T0C+0, T0C+26, T0C+50) // K
+	TLV["pressure"] = list(ONE_ATMOSPHERE*0.60,ONE_ATMOSPHERE*0.8,ONE_ATMOSPHERE*1.05,ONE_ATMOSPHERE*1.50) /* kpa */
+
+/obj/machinery/alarm/roxlnyv/hydroponics
+	target_temperature = T0C+24
+
+/obj/machinery/alarm/roxlnyv/hydroponics/Initialize()
+	. = ..()
+	TLV["temperature"] = list(T0C, T0C+5, T0C+50, T0C+66) // K
+	TLV["pressure"] = list(ONE_ATMOSPHERE*0.90,ONE_ATMOSPHERE,ONE_ATMOSPHERE*1.2,ONE_ATMOSPHERE*1.5) /* kpa */
+	TLV[GAS_CO2] = list(0, 0.2, 10, 10) // Partial pressure, kpa
+	TLV[GAS_OXYGEN] = list(10, 16, 100, 140) // Partial pressure, kpa
+
