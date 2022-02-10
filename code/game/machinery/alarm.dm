@@ -79,6 +79,7 @@
 	wires = /datum/wires/alarm
 
 	var/mode = AALARM_MODE_SCRUBBING
+	var/force_apply_mode = 0
 	var/screen = AALARM_SCREEN_MAIN
 	var/area_uid
 	var/area/alarm_area
@@ -180,6 +181,10 @@
 /obj/machinery/alarm/Process()
 	if((stat & (NOPOWER|BROKEN)) || shorted || buildstage != 2)
 		return
+
+	if(force_apply_mode)
+		apply_mode()
+		force_apply_mode = 0
 
 	var/turf/simulated/location = loc
 	if(!istype(location))	return//returns if loc is not simulated
@@ -295,7 +300,7 @@
 
 	if(!istype(location))
 		return FALSE
-	
+
 	if(breach_cooldown)
 		return FALSE
 
@@ -435,8 +440,16 @@
 
 	switch(mode)
 		if(AALARM_MODE_SCRUBBING)
+			var/scrub_list = null
+			var/decl/environment_data/env_info = decls_repository.get_decl(environment_type)
+
+			if(env_info && env_info.dangerous_gasses)
+				scrub_list = env_info.dangerous_gasses
+			else
+				scrub_list = list(GAS_CO2 = 1)
+
 			for(var/device_id in alarm_area.air_scrub_names)
-				send_signal(device_id, list("set_power"= 1, "set_scrub_gas" = list(GAS_CO2 = 1), "set_scrubbing"= SCRUBBER_SCRUB, "panic_siphon"= 0) )
+				send_signal(device_id, list("set_power"= 1, "set_scrub_gas" = scrub_list, "set_scrubbing"= SCRUBBER_SCRUB, "panic_siphon"= 0) )
 			for(var/device_id in alarm_area.air_vent_names)
 				send_signal(device_id, list("set_power"= 1, "set_checks"= "default", "set_external_pressure"= "default") )
 
@@ -610,7 +623,7 @@
 		if(AALARM_SCREEN_SENSORS)
 			var/list/selected
 			var/thresholds[0]
-			
+
 			var/breach_data = list("selected" = breach_pressure)
 			data["breach_data"] = breach_data
 

@@ -237,9 +237,6 @@
 	icon_state = "techfloor_gray"
 	initial_flooring = /decl/flooring/tiling/tech
 
-/turf/simulated/floor/tiled/techfloor/carbondioxide
-	initial_gas = list(GAS_CO2 = MOLES_O2ATMOS, GAS_NITROGEN = MOLES_N2ATMOS)
-
 /turf/simulated/floor/tiled/monotile
 	name = "floor"
 	icon_state = "steel_monotile"

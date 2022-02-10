@@ -21,30 +21,52 @@
 /decl/submap_archetype/derelict/roxlnyv
 	descriptor = "Independent ice miner."
 	map = "ROXLNYV"
-	crew_jobs = list(
-		/datum/job/submap/scavver_pilot,
-		/datum/job/submap/scavver_doctor,
-		/datum/job/submap/scavver_engineer
-	)
+	crew_jobs = list()
 
 /obj/effect/overmap/visitable/ship/roxlnyv
 	name = "Unknown Vessel"
-	desc = "Sensor array detects a medium-sized vessel of irregular shape. It is transmitting Terran-origin civilian transponder codes."
-	vessel_mass = 5500
+	desc = "Sensor array detects a medium-sized vessel of irregular shape. It is transmitting Terran civilian transponder codes."
+	vessel_mass = 15000
+	vessel_size = SHIP_SIZE_LARGE
 	fore_dir = NORTH
 	burn_delay = 2 SECONDS
 	hide_from_reports = TRUE
 	known = 0
 	initial_generic_waypoints = list(
-
+		"nav_roxlnyv_fore", "nav_roxlnyv_dock", "nav_roxlnyv_cargo"
 	)
 	initial_restricted_waypoints = list(
-
+		"GARRY" = list("nav_garry_bay", "nav_garry_out")
 	)
 
 
 /obj/effect/overmap/visitable/ship/roxlnyv/test
 	name = "ITV Potato"
+
+
+/obj/effect/overmap/visitable/ship/landable/garry
+	name = "GARRY"
+	desc = "Possibly a refrigerator."
+	shuttle = "GARRY"
+	max_speed = 1/(3 SECONDS)
+	burn_delay = 2 SECONDS
+	vessel_mass = 1000
+	fore_dir = EAST
+	skill_needed = SKILL_BASIC
+	vessel_size = SHIP_SIZE_TINY
+
+
+/datum/shuttle/autodock/overmap/garry
+	name = "GARRY"
+	move_time = 20
+	shuttle_area = list(/area/roxlnyv/shuttle)
+	dock_target = "nav_garry_bay"
+	current_location = "nav_garry_bay"
+	landmark_transition = "nav_garry_out"
+	range = 1
+	fuel_consumption = 1
+	logging_home_tag = "nav_garry_bay"
+	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 
 
 /area/roxlnyv
@@ -137,10 +159,15 @@
 	)
 
 
+/turf/simulated/floor/tiled/techfloor/carbondioxide
+	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD)
+
+
 /obj/machinery/power/apc/roxlnyv
 	cell_type = /obj/item/cell/crap
 	locked = 0
 	coverlocked = 0
+	req_access = list()
 
 
 /obj/machinery/alarm/roxlnyv
@@ -153,15 +180,54 @@
 /obj/machinery/alarm/roxlnyv/Initialize()
 	. = ..()
 	TLV["temperature"] = list(T0C-27, T0C+0, T0C+26, T0C+50) // K
-	TLV["pressure"] = list(ONE_ATMOSPHERE*0.60,ONE_ATMOSPHERE*0.8,ONE_ATMOSPHERE*1.05,ONE_ATMOSPHERE*1.50) /* kpa */
+	TLV["pressure"] = list(ONE_ATMOSPHERE*0.60,ONE_ATMOSPHERE*0.8,ONE_ATMOSPHERE*1.05,ONE_ATMOSPHERE*1.30) /* kpa */
+	regulating_temperature = 1
+	force_apply_mode = 1
+
+
+/decl/environment_data/greenhouse
+	dangerous_gasses = list(GAS_N2O = 1)
+	filter_gasses = list(
+		GAS_NITROGEN,
+		GAS_N2O,
+		GAS_PHORON
+	)
+
 
 /obj/machinery/alarm/roxlnyv/hydroponics
 	target_temperature = T0C+24
+	environment_type = /decl/environment_data/greenhouse
+
 
 /obj/machinery/alarm/roxlnyv/hydroponics/Initialize()
 	. = ..()
 	TLV["temperature"] = list(T0C, T0C+5, T0C+50, T0C+66) // K
-	TLV["pressure"] = list(ONE_ATMOSPHERE*0.90,ONE_ATMOSPHERE,ONE_ATMOSPHERE*1.2,ONE_ATMOSPHERE*1.5) /* kpa */
+	TLV["pressure"] = list(ONE_ATMOSPHERE*0.90,ONE_ATMOSPHERE,ONE_ATMOSPHERE*1.5,ONE_ATMOSPHERE*1.7) /* kpa */
 	TLV[GAS_CO2] = list(0, 0.2, 10, 10) // Partial pressure, kpa
 	TLV[GAS_OXYGEN] = list(10, 16, 100, 140) // Partial pressure, kpa
 
+
+/obj/effect/shuttle_landmark/garry/bay
+	name = "GARRY Docking Nook"
+	landmark_tag = "nav_garry_bay"
+	base_area = /area/roxlnyv/cargo_bay
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/garry/near
+	name = "GARRY Departure Corridor"
+	landmark_tag = "nav_garry_out"
+
+
+/obj/effect/shuttle_landmark/roxlnyv/fore
+	name = "ROXLNYV - Fore"
+	landmark_tag = "nav_roxlnyv_fore"
+
+
+/obj/effect/shuttle_landmark/roxlnyv/dock
+	name = "ROXLNYV - Port Docking Bay"
+	landmark_tag = "nav_roxlnyv_dock"
+
+
+/obj/effect/shuttle_landmark/roxlnyv/cargo
+	name = "ROXLNYV - Outside Starboard Cargo Bay"
+	landmark_tag = "nav_roxlnyv_cargo"

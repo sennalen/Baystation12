@@ -30,7 +30,8 @@
 /obj/effect/overmap/visitable/ship/needlenose/test
 	name = "Unknown Vessel"
 	desc = "Sensor array detects an elongated tube emitting strong EM radiation in a broad spectrum."
-	vessel_mass = 4000
+	vessel_mass = 6000
+	vessel_size = SHIP_SIZE_SMALL
 	fore_dir = WEST
 	burn_delay = 1 SECONDS
 	hide_from_reports = TRUE
