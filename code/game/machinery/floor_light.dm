@@ -22,9 +22,10 @@ var/list/floor_light_cache = list()
 
 /obj/machinery/floor_light/prebuilt
 	anchored = TRUE
+	use_power = POWER_USE_OFF
 
-/obj/machinery/floor_light/prebuilt/Process()
-	update_use_power(POWER_USE_ACTIVE)
+/obj/machinery/floor_light/prebuilt/on/Process()
+	use_power = POWER_USE_ACTIVE
 	queue_icon_update()
 	update_brightness()
 	return PROCESS_KILL
