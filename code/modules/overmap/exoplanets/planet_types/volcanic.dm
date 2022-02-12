@@ -151,3 +151,66 @@
 /turf/simulated/mineral/random/high_chance/volcanic
 	name = "volcanic rock"
 	color = COLOR_DARK_GRAY
+
+
+/turf/unsimulated/floor/exoplanet/volcanic/sulfur
+	icon = 'icons/turf/chlorine.dmi'
+	icon_state = "chlorine_sand1"
+	desc = "Sulphurous ash."
+	dirt_color = COLOR_YELLOW
+	footstep_type = /decl/footsteps/sand
+
+/turf/unsimulated/floor/exoplanet/chlorine_sand/New()
+	icon_state = "chlorine_sand[rand(0,11)]"
+	..()
+
+/area/exoplanet/volcanic/sulfur
+	base_turf = /turf/unsimulated/floor/exoplanet/volcanic/sulfur
+
+/obj/effect/overmap/visitable/sector/exoplanet/volcanic/sulfur
+	name = "volcanic exoplanet"
+	desc = "A tectonically unstable planet, ejecting plumes of sulfur."
+	color = COLOR_YELLOW
+	planetary_area = /area/exoplanet/volcanic
+	rock_colors = list(COLOR_DARK_GRAY, COLOR_BROWN_ORANGE, COLOR_YELLOW_GRAY, COLOR_YELLOW, COLOR_SILVER)
+	plant_colors = list("#a23c05","#3f1f0d","#662929","#ba6222","#7a5b3a","#120309", COLOR_PALE_YELLOW, COLOR_WARM_YELLOW, COLOR_DARK_ORANGE)
+	possible_themes = list()
+	map_generators = list(/datum/random_map/automata/cave_system/mountains/volcanic, /datum/random_map/noise/exoplanet/volcanic)
+	ruin_tags_blacklist = RUIN_HABITAT|RUIN_WATER
+	surface_color = COLOR_YELLOW_GRAY
+	water_color = "#c74d00"
+	habitability_distribution = HABITABILITY_BAD
+	has_trees = FALSE
+	flora_diversity = 5
+	fauna_types = list(/mob/living/simple_animal/yithian, /mob/living/simple_animal/hostile/retaliate/jelly, /mob/living/simple_animal/hostile/retaliate/beast/charbaby)
+	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/jelly/mega)
+
+
+
+/obj/effect/overmap/visitable/sector/exoplanet/volcanic/get_atmosphere_color()
+	var/list/colors = list()
+	for (var/g in atmosphere.gas)
+		if (gas_data.tile_overlay_color[g])
+			colors += gas_data.tile_overlay_color[g]
+	colors += COLOR_YELLOW
+	return MixColors(colors)
+
+
+/obj/effect/overmap/visitable/sector/exoplanet/volcanic/generate_atmosphere()
+	..()
+	if(atmosphere)
+		atmosphere.temperature = T20C + rand(0, 800)
+		atmosphere.adjust_gas(GAS_SULFUR, MOLES_O2STANDARD * rand(10,50)/40.0)
+		atmosphere.update_values()
+
+/datum/random_map/noise/exoplanet/volcanic/sulfur
+	descriptor = "volcanic exoplanet"
+	smoothing_iterations = 5
+	land_type = /turf/unsimulated/floor/exoplanet/volcanic/sulfur
+	water_type = /turf/unsimulated/floor/exoplanet/lava
+	water_level_min = 5
+	water_level_max = 6
+
+	fauna_prob = 1
+	flora_prob = 3
+	large_flora_prob = 0
