@@ -154,35 +154,40 @@
 
 
 /turf/unsimulated/floor/exoplanet/volcanic/sulfur
-	icon = 'icons/turf/chlorine.dmi'
-	icon_state = "chlorine_sand1"
+	name = "sulfur"
 	desc = "Sulphurous ash."
 	dirt_color = COLOR_YELLOW
-	footstep_type = /decl/footsteps/sand
+	icon = 'icons/turf/desert.dmi'
+	icon_state = "desert"
+	footstep_type = /decl/footsteps/asteroid
 
-/turf/unsimulated/floor/exoplanet/chlorine_sand/New()
-	icon_state = "chlorine_sand[rand(0,11)]"
+
+/turf/unsimulated/floor/exoplanet/volcanic/sulfur/New()
+	if(prob(20))
+		icon_state = "desert[rand(0,3)]"
 	..()
 
 /area/exoplanet/volcanic/sulfur
 	base_turf = /turf/unsimulated/floor/exoplanet/volcanic/sulfur
 
+
+
 /obj/effect/overmap/visitable/sector/exoplanet/volcanic/sulfur
 	name = "volcanic exoplanet"
 	desc = "A tectonically unstable planet, ejecting plumes of sulfur."
 	color = COLOR_YELLOW
-	planetary_area = /area/exoplanet/volcanic
+	planetary_area = /area/exoplanet/volcanic/sulfur
 	rock_colors = list(COLOR_DARK_GRAY, COLOR_BROWN_ORANGE, COLOR_YELLOW_GRAY, COLOR_YELLOW, COLOR_SILVER)
 	plant_colors = list("#a23c05","#3f1f0d","#662929","#ba6222","#7a5b3a","#120309", COLOR_PALE_YELLOW, COLOR_WARM_YELLOW, COLOR_DARK_ORANGE)
 	possible_themes = list()
-	map_generators = list(/datum/random_map/automata/cave_system/mountains/volcanic, /datum/random_map/noise/exoplanet/volcanic)
+	map_generators = list(/datum/random_map/noise/exoplanet/volcanic/sulfur, /datum/random_map/automata/cave_system/mountains/volcanic)
 	ruin_tags_blacklist = RUIN_HABITAT|RUIN_WATER
 	surface_color = COLOR_YELLOW_GRAY
 	water_color = "#c74d00"
 	habitability_distribution = HABITABILITY_BAD
 	has_trees = FALSE
 	flora_diversity = 5
-	fauna_types = list(/mob/living/simple_animal/yithian, /mob/living/simple_animal/hostile/retaliate/jelly, /mob/living/simple_animal/hostile/retaliate/beast/charbaby)
+	fauna_types = list(/mob/living/simple_animal/yithian, /mob/living/simple_animal/hostile/retaliate/jelly/alt, /mob/living/simple_animal/hostile/retaliate/beast/charbaby)
 	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/jelly/mega)
 
 
@@ -199,18 +204,23 @@
 /obj/effect/overmap/visitable/sector/exoplanet/volcanic/generate_atmosphere()
 	..()
 	if(atmosphere)
-		atmosphere.temperature = T20C + rand(0, 800)
+		atmosphere.temperature = T20C + rand(0, 300)
 		atmosphere.adjust_gas(GAS_SULFUR, MOLES_O2STANDARD * rand(10,50)/40.0)
 		atmosphere.update_values()
 
 /datum/random_map/noise/exoplanet/volcanic/sulfur
-	descriptor = "volcanic exoplanet"
+	descriptor = "sulfur exoplanet"
 	smoothing_iterations = 5
 	land_type = /turf/unsimulated/floor/exoplanet/volcanic/sulfur
 	water_type = /turf/unsimulated/floor/exoplanet/lava
-	water_level_min = 5
-	water_level_max = 6
+	water_level_min = 2
+	water_level_max = 4
 
 	fauna_prob = 1
 	flora_prob = 3
 	large_flora_prob = 0
+
+
+/obj/effect/overmap/visitable/sector/exoplanet/volcanic/sulfur/adapt_animal(var/mob/living/simple_animal/A)
+	..()
+	A.maxbodytemp = T20C + 320
