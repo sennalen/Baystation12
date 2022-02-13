@@ -23,7 +23,6 @@ var/list/floor_light_cache = list()
 /obj/machinery/floor_light/Initialize()
 	. = ..()
 	update_use_power(use_power)
-	queue_icon_update()
 
 
 /obj/machinery/floor_light/mapped_off
@@ -96,9 +95,6 @@ var/list/floor_light_cache = list()
 	if(. && (stat & BROKEN))
 		update_use_power(POWER_USE_OFF)
 
-/obj/machinery/floor_light/power_change(new_state)
-	. = ..()
-	queue_icon_update()
 
 /obj/machinery/floor_light/proc/update_brightness()
 	if((use_power == POWER_USE_ACTIVE) && !(stat & (NOPOWER | BROKEN)))
