@@ -20,15 +20,20 @@ var/list/floor_light_cache = list()
 	var/default_light_colour = "#ffffff"
 
 
-/obj/machinery/floor_light/prebuilt
+/obj/machinery/floor_light/Initialize()
+	. = ..()
+	update_use_power(use_power)
+	queue_icon_update()
+
+
+/obj/machinery/floor_light/mapped_off
 	anchored = TRUE
 	use_power = POWER_USE_OFF
 
-/obj/machinery/floor_light/prebuilt/on/Process()
+
+/obj/machinery/floor_light/mapped_on
+	anchored = TRUE
 	use_power = POWER_USE_ACTIVE
-	queue_icon_update()
-	update_brightness()
-	return PROCESS_KILL
 
 
 /obj/machinery/floor_light/attackby(var/obj/item/W, var/mob/user)
@@ -93,8 +98,7 @@ var/list/floor_light_cache = list()
 
 /obj/machinery/floor_light/power_change(new_state)
 	. = ..()
-	if(. && (stat & NOPOWER))
-		update_use_power(POWER_USE_OFF)
+	queue_icon_update()
 
 /obj/machinery/floor_light/proc/update_brightness()
 	if((use_power == POWER_USE_ACTIVE) && !(stat & (NOPOWER | BROKEN)))
