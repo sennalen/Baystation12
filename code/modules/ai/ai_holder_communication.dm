@@ -120,7 +120,7 @@
 
 // Handles the holder hearing a mob's say()
 // Does nothing by default, override this proc for special behavior.
-/datum/ai_holder/proc/on_hear_say(mob/living/speaker, message)
+/datum/ai_holder/proc/on_hear_say(mob/living/speaker, message, language, sound_volume)
 	return
 
 // This is to make responses feel a bit more natural and not instant.

@@ -3102,6 +3102,7 @@
 #include "code\modules\xenoarcheaology\finds\misc.dm"
 #include "code\modules\xenoarcheaology\finds\special.dm"
 #include "code\modules\xenoarcheaology\finds\talking.dm"
+#include "code\modules\xenoarcheaology\finds\talking2.dm"
 #include "code\modules\xenoarcheaology\tools\ano_device_battery.dm"
 #include "code\modules\xenoarcheaology\tools\artifact_analyser.dm"
 #include "code\modules\xenoarcheaology\tools\artifact_harvester.dm"
