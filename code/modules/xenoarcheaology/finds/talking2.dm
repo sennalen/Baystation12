@@ -8,8 +8,8 @@
 	var/list/no_preceding_space = list(".", "?", "!", ",", ")", ";", ":", "-")
 	var/list/no_following_space = list("(", "-")
 	var/list/terminators = list(".", "!", "?", ";")
-	var/list/connectors = list(",", "-", ":", "and", "but")
-	var/list/intros = list("with", "on", "from", "anti", "super", "either", "is", "I", "say", "says")
+	var/list/connectors = list(",", "-", ":")
+	var/list/intros = list("with", "on", "from", "anti", "super", "either", "is", "I", "say", "says", "and", "but")
 	var/list/filter = list(";", "(", ")", "-", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
 	var/list/replace = list("%"="percent", "&"="and")
 	var/transitions = list()
@@ -106,18 +106,14 @@
 		guaranteed = splittext(prefix, regex("\\s+|(\[\\.!?,-;\\(\\)])"))
 
 	for(var/failsafe in 1 to 2*max_words)
-		if(failsafe > max_words)
-			log_world("failsafe [failsafe]")
 
 		if((num_words_generated >= max_words) && !(last_word in connectors))
 			break
 
 		var/next_word = null
-		log_world("a [retries]")
 
 		if(istype(guaranteed) && length(guaranteed))
 			next_word = lowertext(trim(guaranteed[1]))
-			log_world("b [next_word]")
 			guaranteed.Cut(1,2)
 			if(!length(next_word))
 				continue
@@ -125,7 +121,6 @@
 		else
 			next_word = choose_word(state, priorities, FALSE)
 			var/retry = FALSE
-			log_world("c [next_word] [key_to_string(state)]")
 			if(!next_word)
 				if((last_word in terminators))
 					break
@@ -135,7 +130,6 @@
 					next_word = "."
 				else
 					next_word = ","
-			log_world("d [next_word] [retry]")
 
 			if((next_word in terminators) || (next_word in connectors))
 				if (num_words_generated == 0)
@@ -144,21 +138,15 @@
 					retry = TRUE
 				if (last_word in intros)
 					retry = TRUE
-			log_world("e [next_word] [retry]")
 
 			if(next_word == last_word)
 				retry = TRUE
-			log_world("f [next_word] [retry]")
 
 			if(next_word in list(";", "(", ")"))
-				log_world("bad char [next_word]")
 				retry = TRUE
-			log_world("g [next_word] [retry]")
 
 			if(length(trim(next_word)) == 0)
-				log_world("empty word [next_word]")
 				retry = TRUE
-			log_world("h [next_word] [retry]")
 
 			if (retry)
 				if (retries > 3)
@@ -169,8 +157,6 @@
 			retries = 0
 
 		priorities -= next_word
-
-		log_world("i [next_word]")
 
 		state.Cut(1,2)
 		state += vocabulary_lookup[next_word] || -1
@@ -185,8 +171,6 @@
 
 		num_words_generated += 1
 		last_word = next_word
-
-
 
 	return output
 
@@ -214,7 +198,6 @@
 		w = lowertext(trim(w))
 		if(w in watch)
 			var/topic = watch[w]
-			log_world("[w] topic [topic]")
 			prefix = pick(topics[topic])
 			break
 		if(w in generator.vocabulary)
@@ -224,8 +207,10 @@
 
 
 /datum/ai_holder/simple_animal/retaliate/chatty
-	var/datum/chatbot/chatholder = new /datum/chatbot/medical()
-	speak_chance = 2
+	var/datum/chatbot/chatholder = null
+
+/datum/ai_holder/simple_animal/retaliate/chatty/medical
+	chatholder = new /datum/chatbot/medical()
 
 /datum/ai_holder/simple_animal/retaliate/chatty/on_hear_say(mob/living/speaker, message, language, sound_volume)
 	if(istype(holder) && istype(speaker))
@@ -242,7 +227,7 @@
 	speak_chance = 2
 
 /mob/living/simple_animal/hostile/retaliate/goose/doctor/chatty
-	ai_holder = /datum/ai_holder/simple_animal/retaliate/chatty
+	ai_holder = new /datum/ai_holder/simple_animal/retaliate/chatty/medical()
 	languages = list(LANGUAGE_HUMAN_EURO)
 
 
@@ -280,19 +265,20 @@ Now my humble fear is that this double training, in language as well as in thoug
 		"help"=list("Tell me", "Please"),
 		"diagnosis"=list("It looks like", "My diagnosis"),
 		"prognosis"=list("I think", "Probably,", "The prognosis is"),
-		"prescribe"=list("I prescribe", "The patient needs", "I recommend", "Administer", "This requires", "dylovene", "inaprovaline", "bicaridine", "antidexafen", "citalopram") )
+		"prescribe"=list("I prescribe", "The patient needs", "I recommend", "Administer", "This requires", "dylovene", "inaprovaline", "bicaridine", "antidexafen", "citalopram"),
 		"quack"=list("I graduated top of my class", "My specialty is", "I know what I'm talking about when I say")
+	)
 	watch = list(
 		"hi"="hi", "hello"="hi", "morning"="hi", "afternoon"="hi", "doctor"="hi", "goose"="hi", "dr"="hi", "anatidae"="hi",
 		"help"="help", "problem"="help", "emergency"="help", "sick"="help", "injured"="help", "trauma"="help", "shot"="help", "hurt"="help", "hurts"="help", "pain"="help", "feel"="help", "patient"="diagnosis",
 		"diagnosis"="diagnosis", "diagnose"="diagnosis", "symptom"="diagnosis", "symptoms"="diagnosis", "breathe"="diagnosis", "breathing"="diagnosis", "heart"="diagnosis", "liver"="diagnosis", "lungs"="diagnosis", "fever"="diagnosis", "vomiting"="diagnosis", "head"="diagnosis", "arm"="diagnosis",
-		"prognosis"="prognosis", "surgery"="prognosis", "operating"="prognosis", "okay"="prognosis", "die"="prognosis", "live"="prognosis"
+		"prognosis"="prognosis", "surgery"="prognosis", "operating"="prognosis", "okay"="prognosis", "die"="prognosis", "live"="prognosis",
 		"prescription"="prescribe", "prescribe"="prescribe", "medicine"="prescribe", "recommend"="prescribe", "recommendation"="prescribe", "should"="prescribe", "treatment"="prescribe", "suggest"="prescribe", "suggestion"="prescribe",
 		"qualified"="quack", "unqualified"="quack", "wrong"="quack", "quack"="quack"
 	)
 	corpus = {"Everything in your body revolves around the brain. So long as your brain isn't dead, you're not dead. Everything else is just there to keep the brain alive, and the severity of any given injury is a direct measure of how much of a threat it poses to the brain.
 
-Certain types of effects can cause your brain's integrity to lower. When it hits 0%, you are braindead - and there's no coming back from that.
+Certain types of effects can cause your brain's integrity to lower. When it hits bottom, you are braindead - and there's no coming back from that.
 
 The things that pose the biggest threat to your brain on board this ship,
 

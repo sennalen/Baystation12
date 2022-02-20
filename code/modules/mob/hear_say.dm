@@ -8,7 +8,6 @@
 			//Or someone snoring.  So we make it where they won't hear it.
 		return
 
-
 	var/need_sound = 3
 	var/need_sight = 0
 
@@ -29,10 +28,12 @@
 			speech_sound = null
 		if(language.flags & NONVERBAL)
 			need_sight = max(need_sight, 1)
-			need_sound = max(need_sound, 1)
+			need_sound = min(need_sound, 2)
 
-		//if(!say_understands(speaker, language))
-		//	message = language.scramble(message, languages)
+		log_world("check understanding")
+		if(!say_understands(speaker, language))
+			log_world("scramble")
+			message = language.scramble(message, languages)
 
 
 	if(!isghost(src)) //Ghosts can hear even in vacuum.
@@ -49,11 +50,14 @@
 				sound_vol *= 0.5 //muffle the sound a bit, so it's like we're actually talking through contact
 				can_hear = max(0, can_hear-1)
 
-	var/understand = TRUE
+	var/perceive = TRUE
+	var/stars = FALSE
 
 	var/deficit = (need_sight)? need_sight - can_see : 0 + (need_sound)? need_sound - can_hear : 0
+	if(deficit > 2)
+		perceive = FALSE
 	if(deficit > 1)
-		understand = FALSE
+		stars = TRUE
 	if(deficit > 0)
 		italics = TRUE
 
@@ -66,24 +70,26 @@
 		var/mob/living/carbon/human/H = speaker
 		speaker_name = H.GetVoice()
 
-
-	if(understand)
+	if(perceive)
 		if(need_sight - can_see > 0 && can_hear > 0) //Missing non-verbal cues
 			if(speaker != src)
 				if (prob(50))
 					if(language)
 						message = language.scramble(message, list())
 					else
-						message = stars(message)
+						stars = TRUE
 
 		if(!client)
 			hear_say_ai(message, verb, language, alt_name, speaker, speech_sound, sound_vol)
 			return
 
 		if(sleeping || stat == UNCONSCIOUS)
-			hear_sleep(message)
+			if(need_sound && can_hear)
+				hear_sleep(message)
 			return
 
+		if(stars)
+			message = stars(message)
 		if(italics)
 			message = "<i>[message]</i>"
 
@@ -100,19 +106,18 @@
 		else
 			var/nverb = verb
 			if (language)
-				if (say_understands(speaker, language))
-					var/skip = FALSE
-					if (isliving(src))
-						var/mob/living/L = src
-						skip = L.default_language == language
-					if (!skip)
-						switch(src.get_preference_value(/datum/client_preference/language_display))
-							if(GLOB.PREF_FULL) // Full language name
-								nverb = "[verb] in [language.name]"
-							if(GLOB.PREF_SHORTHAND) //Shorthand codes
-								nverb = "[verb] ([language.shorthand])"
-							if(GLOB.PREF_OFF)//Regular output
-								nverb = verb
+				var/skip = FALSE
+				if (isliving(src))
+					var/mob/living/L = src
+					skip = L.default_language == language
+				if (!skip)
+					switch(src.get_preference_value(/datum/client_preference/language_display))
+						if(GLOB.PREF_FULL) // Full language name
+							nverb = "[verb] in [language.name]"
+						if(GLOB.PREF_SHORTHAND) //Shorthand codes
+							nverb = "[verb] ([language.shorthand])"
+						if(GLOB.PREF_OFF)//Regular output
+							nverb = verb
 				on_hear_say("<span class='game say'>[track]<span class='name'>[speaker_name]</span>[alt_name] [language.format_message(message, nverb)]</span>")
 
 			else
@@ -147,10 +152,10 @@
 
 
 
-/mob/proc/hear_say_ai(message, verb, language, alt_name, speaker, speech_sound, sound_vol)
+/mob/proc/on_hear_say_ai(message, verb, language, alt_name, speaker, speech_sound, sound_vol)
 	return
 
-/mob/living/hear_say_ai(message, verb, language, alt_name, speaker, speech_sound, sound_vol)
+/mob/living/on_hear_say_ai(message, verb, language, alt_name, speaker, speech_sound, sound_vol)
 	if(istype(ai_holder))
 		ai_holder.on_hear_say(speaker, message, language, sound_vol)
 
@@ -338,6 +343,7 @@
 		for(var/mob/living/M in src.contents)
 			M.show_message(message)
 	src.show_message(message)
+
 
 /mob/proc/hear_sleep(var/message)
 	var/heard = ""

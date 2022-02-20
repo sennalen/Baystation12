@@ -28,14 +28,14 @@
 	communicate(/decl/communication_channel/dsay, client, message)
 
 /mob/proc/say_understands(var/mob/other,var/datum/language/speaking = null)
-
-	if (src.stat == 2)		//Dead
+	log_world("a")
+	if (src.stat == DEAD)
 		return 1
-
+	log_world("b")
 	//Universal speak makes everything understandable, for obvious reasons.
-	else if(src.universal_speak || src.universal_understand)
+	if(src.universal_speak || src.universal_understand)
 		return 1
-
+	log_world("c")
 	//Languages are handled after.
 	if (!speaking)
 		if(!other)
@@ -47,15 +47,16 @@
 		if (istype(other, src.type) || istype(src, other.type))
 			return 1
 		return 0
-
+	log_world("d")
 	if(speaking.flags & INNATE)
 		return 1
-
+	log_world("e [speaking.name]")
 	//Language check.
 	for(var/datum/language/L in src.languages)
+		log_world("e2 [L.name]")
 		if(speaking.name == L.name)
 			return 1
-
+	log_world("f")
 	return 0
 
 /mob/proc/say_quote(var/message, var/datum/language/speaking = null)
