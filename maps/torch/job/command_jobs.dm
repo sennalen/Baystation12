@@ -456,5 +456,5 @@
 							 /datum/computer_file/program/reports,
 							 /datum/computer_file/program/deck_management)
 
-/datum/job/bridgeofficer/get_description_blurb()
+/datum/job/connofficer/get_description_blurb()
 	return "You are a Conn Officer. You ensure safe navigation of the ship, within the directives of your Commanding Officer and Executive Officer. You should normally bring matters to the attention of relevant department heads to be handled through the normal chain of command, but may issue your own orders to lower ranks when neccessary. You may be called on to pilot [GLOB.using_map.full_name] in the absence of a junior bridge officer or helmsman."
